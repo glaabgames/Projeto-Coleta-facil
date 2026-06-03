@@ -1,0 +1,361 @@
+/* ======================================= */
+/* == Estilização da tela de calendário == */
+/* ======================================= */
+
+/* Estilização principal da página */
+.pagina-calendario {
+    /* Cor de fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização do container principal */
+.pagina-calendario .container {
+    /* Largura */
+    max-width: 750px;
+    /* Margem */
+    margin: 25px auto;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* Remove o menu anterior */
+.pagina-calendario .menu {
+    /* Remove o menu anterior */
+    display: none;
+}
+
+/* == Cabeçalho == */
+
+/* Estilização da introdução */
+.pagina-calendario .intro-calendario {
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Estilização do título principal */
+.pagina-calendario h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho */
+    font-size: 40px;
+    /* Cor */
+    color: #2e744d;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Estilização dos textos */
+.pagina-calendario .container>p,
+.pagina-calendario .intro-calendario p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.6;
+    /* Margem acima */
+    margin-top: 0;
+    /* Margem abaixo */
+    margin-bottom: 20px;
+}
+
+/* == Cards == */
+
+/* Estilização dos cards */
+.pagina-calendario .card {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor do texto */
+    color: white;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Margem abaixo */
+    margin-bottom: 15px;
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Animação suave dos cards */
+.pagina-calendario .card:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* == Estilo dos títulos == */
+
+/* Estilização dos subtítulos */
+.pagina-calendario h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 600;
+    /* Cor */
+    color: white;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Linha dos títulos */
+.campo-titulo {
+    /* Remove a margem */
+    display: flex;
+    /* Centraliza os elementos */
+    align-items: center;
+    /* Espaço entre os elementos */
+    gap: 8px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Ícones */
+.icone-campo {
+    /* Largura */
+    width: 27px;
+    /* Altura */
+    height: 27px;
+    /* Ajusta a imagem */
+    object-fit: contain;
+    /* Ocupa toda a largura */
+    display: block;
+    /* Elevação */
+    transform: translateY(1px);
+}
+
+/* == Estilo dos selects == */
+
+/* Estilização dos campos de selecionar */
+.pagina-calendario select {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 12px 14px;
+    /*  Bordas arredondadas */
+    border-radius: 12px;
+    /* Remove as bordas */
+    border: none;
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #587a69;
+    /* Remove a estilização nativa */
+    appearance: none;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Animação leve */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-calendario select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+/* Foco */
+.pagina-calendario select:focus {
+    /* Remove o contorno */
+    outline: none;
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Estilo da maldura */
+    border: 1px solid #bfe4cf;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+/* == Lista da coleta == */
+
+/* Estilização da lista */
+.pagina-calendario .lista-coleta {
+    /* Margem acima */
+    margin-top: 20px;
+    /* Remove o estilo */
+    list-style: none;
+    /* Espaçamento interno */
+    padding: 0;
+}
+
+/* Cards dos dias */
+.pagina-calendario .dia,
+.pagina-calendario .lista-coleta li {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Cria espaços iguais entre os itens */
+    justify-content: space-between;
+    /* Centraliza os elementos */
+    align-items: center;
+    /* Cor de fundo */
+    background: white;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-bottom: 12px;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Sombra das caixas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-calendario .dia:hover,
+.pagina-calendario .lista-coleta li:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Informações */
+.pagina-calendario .dia .info {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Textos */
+.pagina-calendario .dia strong,
+.pagina-calendario .dia p {
+    /* Cor dos textos */
+    color: #3f976e;
+    /* Tamanho da fonte */
+    font-weight: 400;
+}
+
+/* Fonte */
+.pagina-calendario .dia span,
+.pagina-calendario .info,
+.pagina-calendario .tipo-coleta {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Cor */
+    color: #587a69;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Dimensões da fonte */
+    font-weight: 300;
+}
+
+/* == Tags == */
+
+/* Estilização das tags */
+.pagina-calendario .tag {
+    /* Espaçamento interno */
+    padding: 5px 10px;
+    /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Tamanho da fonte */
+    font-size: 12px;
+}
+
+/* Estilização da tag "reciclável" */
+.pagina-calendario .reciclavel {
+    /* Cor de fundo */
+    background: #ecfdeb;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */ 
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+}
+
+/* Estilização da tag de "orgânico" */
+.pagina-calendario .organico {
+    /* Cor de fundo */
+    background: #fdf7eb;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+}
+
+/* == Botão de reclamação == */
+
+/* Estilização do atalho para a tela de comentários */
+.pagina-calendario .btn-reclamacao {
+    /* Ocupa toda a largura */
+    display: block;
+    /* Largura */
+    max-width: 400px;
+    /* Margem */
+    margin: 25px auto 0;
+    /* Centralização */
+    text-align: center;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cpr */
+    color: white;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Remove o sublinhado */
+    text-decoration: none;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Animação suave */
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+/* Animação suave */
+.pagina-calendario .btn-reclamacao:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* == Rodapé da página == */
+
+/* Estilização da descrição e contatos */
+.pagina-calendario .rodape-desc,
+.pagina-calendario .contato-item {
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Força a cor do texto */
+    color: #dfdfdf !important;
+}
+
+/* ================================================== */
+/* == Final da estilização da página de calendário == */
+/* ================================================== */

@@ -1,0 +1,297 @@
+/* ================================== */
+/* == Estilização da tela de login == */
+/* ================================== */
+
+/* Fundo geral */
+body.pagina-login {
+    /* Cor de fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Área principal */
+.pagina-login main {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaçamento interno */
+    padding: 45px 16px 65px;
+}
+
+/* Wrapper */
+.pagina-login .login-wrapper {
+    /* Largura */
+    width: 100%;
+    /* ,Largura */
+    max-width: 720px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Topo */
+.pagina-login .login-topo {
+    /* Espaçamento interno */
+    padding: 0 4px;
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Título principal */
+.pagina-login .login-topo h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 42px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Espaçamento externo */
+    margin: 0 0 16px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Descrição */
+.pagina-login .login-topo p {
+    /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Card */
+.pagina-login .card {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 24px;
+    /* Espaçamento interno */
+    padding: 36px;
+    /* Sombra leve */
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+    /* Largura */
+    width: 100%;
+    /* Tamanho da caixa */
+    box-sizing: border-box;
+}
+
+/* Hover card */
+.pagina-login .card:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Título interno */
+.pagina-login .card h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 800;
+    /* Tamanho da fonte */
+    font-size: 29px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Espaçamento externo */
+    margin: 0 0 28px;
+}
+
+/* Formulário */
+.pagina-login form {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+    /* Espaçamento entre elementos */
+    gap: 14px;
+}
+
+/* Labels */
+.pagina-login label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #3f976e;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+}
+
+/* Inputs */
+.pagina-login input {
+    /* Hover card */
+    width: 100%;
+    /* Hover card */
+    padding: 15px 16px;
+    /* Hover card */
+    border-radius: 15px;
+    /* Hover card */
+    border: 1px solid #e4eee9;
+    /* Hover card */
+    background: #f1f5f3;
+    /* Hover card */
+    font-family: 'Poppins', sans-serif;
+    /* Hover card */
+    font-size: 14px;
+    /* Hover card */
+    font-weight: 300;
+    /* Hover card */
+    color: #587a69;
+    /* Hover card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Hover card */
+    box-sizing: border-box;
+    /* Hover card */
+    transition: none;
+}
+
+/* Placeholder */
+.pagina-login input::placeholder {
+    /* Hover card */
+    color: #587a69;
+    /* Hover card */
+    font-weight: 300;
+}
+
+/* Hover input */
+.pagina-login input:hover {
+    /* Hover card */
+    transform: none;
+    /* Hover card */
+    background: #ffffff;
+}
+
+/* Focus input */
+.pagina-login input:focus {
+    /* Remove sublinhado */
+    outline: none;
+    /* Remove */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Botão */
+.pagina-login button {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-top: 14px;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove as bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #ffffff;
+    /* Cursor */
+    cursor: pointer;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Hover botão */
+.pagina-login button:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra mais presente */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Caixa informativa */
+.pagina-login .info {
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 13px 15px;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Altura da linha */
+    line-height: 1.4;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Ícone */
+.pagina-login .info img {
+    /* Largura */
+    width: 34px;
+    /* Altura */
+    height: 34px;
+    /* Containers */
+    object-fit: contain;
+    /* Diminui o elemento para caber no container */
+    flex-shrink: 0;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Texto */
+.pagina-login .info p {
+    /* Remove a margem */
+    margin: 0;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Destaque */
+.pagina-login .info strong {
+    /* Cor do texto */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Margem à esquerda */
+    margin-left: -6px;
+    /* Margem à direita */
+    margin-right: 6px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de login == */
+/* ============================================= */

@@ -1,0 +1,719 @@
+/* ================================== */
+/* == Estilização da tela de dicas == */
+/* ================================== */
+
+/* Página principal */
+.pagina-dicas {
+    /* Cor de fundo */
+    background-color: #eef3f1;
+}
+
+/* Fonte padrão */
+body.pagina-dicas {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* == Containers == */
+
+/* Estilização do container principal */
+.pagina-dicas .container-principal {
+    /* Largura */
+    max-width: 700px;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+}
+
+/* Estilização dos containers e introdução */
+.pagina-dicas .container,
+.pagina-dicas .intro-dicas {
+    /* Tamanho da fonte */
+    max-width: 750px;
+    /* Margem */
+    margin: 25px auto 20px;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* == Estilização da introdução == */
+
+/* Estilização da introdução */
+.pagina-dicas .intro-dicas-conteudo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Alinha */
+    justify-content: space-between;
+    /* Espaço entre elementos */
+    gap: 20px;
+}
+
+/* Estilo da introdução */
+.pagina-dicas .intro-texto {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Alinha os itens em colunas */
+    flex-direction: column;
+}
+
+/* Estilização da introdução */
+.pagina-dicas .intro-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 12px;
+}
+
+/* Estilização dos títulos e subtítulos */
+.pagina-dicas .intro-linha h1,
+.pagina-dicas .titulo-linha h2 {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilo dos textos */
+.pagina-dicas .intro-linha p {
+    /* Margem acima */
+    margin-top: 5px;
+}
+
+/* Estilo dos textos */
+.pagina-dicas .intro-dicas p,
+.pagina-dicas .intro-linha p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Altura da linha */
+    line-height: 1.6;
+    /* Cor */
+    color: #587a69;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização da imagem de introdução */
+.pagina-dicas .intro-img {
+    /* Largura */
+    width: 110px;
+    /* Altura */
+    height: auto;
+    /* Ajusta imagem sem cortar */
+    object-fit: contain;
+    /* Remove */
+    flex-shrink: 0;
+}
+
+/* == Estilização dos títulos == */
+
+/* Estilização do título da página */
+body.pagina-dicas h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 40px;
+    /* Cor */
+    color: #2e744d !important;
+    /* Margem acima */
+    margin-top: -0.2px;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Estilização geral do h2 */
+h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Cor */
+    color: #1f5e3b;
+    /* Margem */
+    margin: 15px 0 10px;
+}
+
+/* Estilo da linha do título */
+.pagina-dicas .titulo-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Tamanho da fonte */
+.pagina-dicas .icone-titulo {
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+}
+
+/* == Cards == */
+
+/* Estilização dos cards */
+.pagina-dicas .card {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-dicas .card:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* Primeiro card branco */
+.pagina-dicas .card:first-child {
+    /* Cor de fundo */
+    background: #ffffff;
+}
+
+/* Título gigante */
+.pagina-dicas .card h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 55px;
+    /* Força a cor do texto */
+    color: #2e744d !important;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Títulos dos cards */
+.pagina-dicas .card h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Tamanho da fonte */
+    font-size: 24px;
+    /* Remove a margem */
+    margin: 0;
+    /* Cor */
+    color: #ffffff;
+}
+
+/* Títulos do primeiro card */
+.pagina-dicas .card:first-child h2 {
+    /* Cor */
+    color: #2e744d;
+}
+
+/* Textos */
+.pagina-dicas .card p,
+.pagina-dicas .card li {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da linha */
+    line-height: 1.6;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+    /* Cor */
+    color: #ffffff;
+}
+
+/* Ajuste específico dos parágrafos */
+.pagina-dicas .card p {
+    /* Margem acima */
+    margin-top: 0;
+    /* Margem abaixo */
+    margin-bottom: 12px;
+}
+
+/* Textos do primeiro card */
+.pagina-dicas .card:first-child p {
+    /* Cor */
+    color: #587a69;
+}
+
+/* == Listas == */
+
+/* Estilização das listas */
+.pagina-dicas .card ul,
+.pagina-dicas .texto-dica ul {
+    /* Espaçamento interno à esquerda */
+    padding-left: 18px;
+    /* Margem acima */
+    margin-top: 8px;
+}
+
+/* Estilização dos textos */
+.pagina-dicas .texto-dica p,
+.pagina-dicas .texto-dica li {
+    /* Margem */
+    margin-bottom: 6px;
+}
+
+/* Estilo das imagens */
+
+/* Estilização da caixa de dicas */
+.pagina-dicas .dica-box {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 18px;
+}
+
+/* Estilização da imagem */
+.pagina-dicas .img-dica {
+    /* Largura */
+    width: 90px;
+    /* Altura */
+    height: 90px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+    /* Remove */
+    flex-shrink: 0;
+}
+
+/* Estilizção do texto */
+.pagina-dicas .texto-dica {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* == Card de organização == */
+
+/* Estilização do card */
+.pagina-dicas .card-organizacao,
+.pagina-dicas .card.organizacao-lixo {
+    /* Cor de fundo */
+    background: #ffffff !important;
+    /* Força a cor do texto */
+    color: #587a69 !important;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Bardas à esquerda */
+    border-left: 6px solid #1f9452;
+    /* Estilo de moldura */
+    border: 1px solid #e6e6e6;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-dicas .card-organizacao:hover,
+.pagina-dicas .card.organizacao-lixo:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+    /* Sombra da caixa */
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Cor para os textos */
+.pagina-dicas .card.organizacao-lixo p,
+.pagina-dicas .card.organizacao-lixo li {
+    /* Cor */
+    color: #587a69 !important;
+}
+
+/* Cor para os títulos e subtítulos */
+.pagina-dicas .card.organizacao-lixo h1,
+.pagina-dicas .card.organizacao-lixo h2 {
+    /* Cor */
+    color: #1f5e3b !important;
+}
+
+/* == Itens de resíduos == */
+
+/* Estilização dos itens */
+.pagina-dicas .item-lixo,
+.item-residuo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* ícones */
+.pagina-dicas .icone-item,
+.icone-residuo {
+    /* Ajusta os itens em containers */
+    object-fit: contain;
+}
+
+/* Estilização dos ícones */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 20px;
+    /* Margem acima */
+    margin-top: 3px;
+}
+
+/* Estilização do ícone */
+.icone-residuo {
+    /* Largura */
+    width: 24px;
+    /* Altura */
+    height: 24px;
+    /* Elevação */
+    transform: translateY(-7px);
+}
+
+/* Estilização dos textos */
+.pagina-dicas .item-lixo p,
+.item-residuo p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* == Ajustes de imagem == */
+
+/* Ajustes de imagem */
+.pagina-dicas img[src*="dicas-coleta"] {
+    /* Tamanho da imagem */
+    transform: scale(1.7);
+}
+
+/* Estilização do card de organização do lixo */
+.pagina-dicas .card-organizacao {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Sombra leve */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    /* Estilização da moldura */
+    border-left: 6px solid #1f9452;
+    /* Animação leve */
+    transition: 0.2s;
+}
+
+/* Animação leve */
+.pagina-dicas .card-organizacao:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+    /* Sombra leve */
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Força as cores para o card */
+.pagina-dicas .card.organizacao-lixo {
+    /* Força a cor de fundo */
+    background: #ffffff !important;
+    /* Força a cor do texto */
+    color: #587a69 !important;
+    /* Estilização da moldura */
+    border: 1px solid #e6e6e6;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Estilização dos textos internos */
+.pagina-dicas .card.organizacao-lixo p,
+.pagina-dicas .card.organizacao-lixo li {
+    /* Força a cor */
+    color: #587a69 !important;
+    /* Espaçamento vertical das linhas */
+    line-height: 2;
+    /* Espaço entre blocos de texto */
+    margin-bottom: 8px;
+}
+
+/* Estilização dos títulos e subtítulos */
+.pagina-dicas .card.organizacao-lixo h2,
+.pagina-dicas .card.organizacao-lixo h1 {
+    /* Força a cor */
+    color: #1f5e3b !important;
+}
+
+/* Força todos os cards da página a terem a mesma largura */
+.pagina-dicas .container {
+    /* Largura */
+    max-width: 750px;
+    /* Margem */
+    margin: 0 auto;
+}
+
+/* Estilização dos cards */
+.pagina-dicas .container .card {
+    /* Largura */
+    max-width: 100%;
+    /* Ocupa toda a largura */
+    display: block;
+}
+
+/* Remove qualquer comportamento diferente dos cards brancos */
+.pagina-dicas .card.organizacao-lixo {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+
+/* Garante que o último card não fique diferente */
+.pagina-dicas .container .card:last-child {
+    /* Força a largura */
+    width: 100% !important;
+}
+
+/* Estilização do título */
+.pagina-dicas .titulo-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+}
+
+/* Remove deslocamentos do h2 */
+.pagina-dicas .titulo-linha h2 {
+    /* Remove margem */
+    margin: 0;
+    /* Altura da linha */
+    line-height: 1;
+}
+
+/* Garante que o ícone não puxe o alinhamento */
+.pagina-dicas .icone-titulo {
+    /* Ocupa toda a largura */
+    display: block;
+}
+
+/* Estilização da linha com o ícone e texto */
+.pagina-dicas .item-lixo {
+    /* Ativa flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 8px;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Ícone ao lado do texto */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 18px;
+    /* Altura */
+    height: 18px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+}
+
+/* Remove a margem dos textos */
+.pagina-dicas .item-lixo p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização geral */
+.pagina-dicas .titulo-linha,
+.pagina-dicas .item-lixo {
+    /* Ativa a flebox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Força a mesma largura de coluna para os ícones */
+.pagina-dicas .icone-titulo,
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+}
+
+/* Centralização */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 18px;
+    /* Altura */
+    height: 18px;
+    /* Margem à esquerda */
+    margin-left: 5px;
+}
+
+/* Estilização das grid-cards */
+.pagina-dicas .grid-cards {
+    /* Ativa a grid */
+    display: grid;
+    /* Quantas colunas terá e qual o tamanho delas */
+    grid-template-columns: 1fr 1fr;
+    /* Espaço entre elementos */
+    gap: 18px;
+}
+
+/* Estilização dos cards */
+.pagina-dicas .grid-cards .card {
+    /* Largura */
+    width: 100%;
+}
+
+/* Estilização do card de tipos de resíduos */
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) h2,
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) p {
+    /* Cor do texto */
+    color: #ffffff;
+}
+
+/* Ajuste na imagem da lâmpada */
+.pagina-dicas img[src*="dicas-coleta"] {
+    /* Tamanho da imagem */
+    transform: scale(1.7);
+}
+
+/* Estilização dos cards */
+.pagina-dicas .card {
+    /* Espaçamento interno */
+    padding: 22px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os elementos na vertical */
+    flex-direction: column;
+    /* Espaço entre elementos */
+    gap: 14px;
+}
+
+/* Estilização do título */
+.pagina-dicas .titulo-linha {
+    /* Margem abaixo */
+    margin-bottom: 19px;
+}
+
+/* Estilização das imagens dos itens de resíduos */
+.pagina-dicas .item-lixo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Alinhamento dos itens */
+    align-items: flex-start;
+    /* Espaço entre elementos */
+    gap: 10px;
+}
+
+/* Organização dos itens de resíduos */
+.item-residuo{
+    /* Ativa a flexbox */
+    display: flex;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem acima */
+    margin-top: 0px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+    /* Melhor alinhamento */
+    align-items: flex-start;
+}
+
+/* Ícones dos resíduos */
+.icone-residuo{
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+    /* Mantém proporção */
+    object-fit: contain;
+    /* Ajuste vertical */
+    transform: none;
+    /* Evita deformação */
+    flex-shrink: 0;
+    /* Garante renderização correta */
+    display: block;
+    /* Margem à esquerda*/
+    margin-left: -4px;
+}
+
+/* Texto dos resíduos */
+.item-residuo p{
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização do ícone dos itens */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 20px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+    /* Margem acima */
+    margin-top: 3px;
+}
+
+/* Estilização dos textos */
+.pagina-dicas .item-lixo p {
+    /* Largura */
+    max-width: 80%;
+}
+
+/* Estilização do card de tipos de resíduos */
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor do texto */
+    color: #ffffff;
+}
+
+
+/* Estilização da introdução */
+.pagina-dicas .intro-linha {
+    /* Quebra correta */
+    flex-direction: column;
+    /* Alinhamento dos itens */
+    align-items: flex-start;
+}
+
+/* Estilização do h1 */
+.pagina-dicas .intro-linha h1 {
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de dicas == */
+/* ============================================= */

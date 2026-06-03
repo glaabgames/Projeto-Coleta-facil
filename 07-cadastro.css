@@ -1,0 +1,318 @@
+/* ===================================== */
+/* == Estilização da tela de cadastro == */
+/* ===================================== */
+
+/* Fundo geral */
+body.pagina-cadastro {
+    /* Fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Área principal */
+.pagina-cadastro main {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaçamento interno */
+    padding: 45px 16px 65px;
+}
+
+/* Wrapper */
+.pagina-cadastro .cadastro-wrapper {
+    /* Largura */
+    width: 100%;
+    /* Largura */
+    max-width: 720px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Topo */
+.pagina-cadastro .cadastro-topo {
+    /* Espaçamento interno */
+    padding: 0 4px;
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Título */
+.pagina-cadastro .cadastro-topo h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 42px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Margem */
+    margin: 0 0 14px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Descrição */
+.pagina-cadastro .cadastro-topo p {
+    /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Card */
+.pagina-cadastro .card {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 24px;
+    /* Espaçamento interno */
+    padding: 40px 36px;
+    /* Sombra leve */
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+    /* Largura */
+    width: 100%;
+    /* Caixa */
+    box-sizing: border-box;
+}
+
+/* Hover card */
+.pagina-cadastro .card:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Formulário */
+.pagina-cadastro form {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+    /* Espaçamento entre elementos */
+    gap: 14px;
+}
+
+/* Labels */
+.pagina-cadastro label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #3f976e;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+}
+
+/* Inputs e selects */
+.pagina-cadastro input,
+.pagina-cadastro select {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px 16px;
+    /* Bordas arredondadas */
+    border-radius: 15px;
+    /* Bordas */
+    border: 1px solid #e4eee9;
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #587a69;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Tamanho da caixa */
+    box-sizing: border-box;
+    /* Remove a estilização padrão */
+    appearance: none;
+}
+
+/* Inputs sem animação */
+.pagina-cadastro input {
+    /* ALtera regras anteriores */
+    transition: none;
+}
+
+/* Selects com animação */
+.pagina-cadastro select {
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Placeholder */
+.pagina-cadastro input::placeholder {
+    /* Cor do texto */
+    color: #587a69;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* Hover input */
+.pagina-cadastro input:hover {
+    /* Remove as transformações */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+}
+
+/* Focus input */
+.pagina-cadastro input:focus {
+    /* Remove o sublinhado */
+    outline: none;
+    /* Remove as transformações */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Hover select */
+.pagina-cadastro select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Focus select */
+.pagina-cadastro select:focus {
+    /* Remove o sublinhado */
+    outline: none;
+    /* EElevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Botão */
+.pagina-cadastro button {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-top: 14px;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove as bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #ffffff;
+    /* Cursor */
+    cursor: pointer;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação leve */
+    transition: 0.25s ease;
+}
+
+/* Hover botão */
+.pagina-cadastro button:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Caixa informativa */
+.pagina-cadastro .info {
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 13px 15px;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaçamento entre elementos */
+    gap: 10px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Altura da linha */
+    line-height: 1.4;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Ícone */
+.pagina-cadastro .info img {
+    /* Largura */
+    width: 34px;
+    /* Altura */
+    height: 34px;
+    /* Ajusta a imagem sem distorcer */
+    object-fit: contain;
+    /* Define a proporção de redução */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-cadastro .info p {
+    /* Espaçamento externo */
+    margin: 0;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Destaque */
+.pagina-cadastro .info strong {
+    /* Cor do texto */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-weight: 500;
+    /* Margem à esquerda */
+    margin-left: -6px;
+    /* Margem à direita */
+    margin-right: 6px;
+}
+
+/* ================================================ */
+/* == Final da estilização da página de cadastro == */
+/* ================================================ */

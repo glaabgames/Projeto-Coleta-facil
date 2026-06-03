@@ -1,0 +1,262 @@
+/* =================================== */
+/* == Estilização da tela de splash == */
+/* =================================== */
+
+/* Estilização das margens */
+* {
+    /* Remove a margem */
+    margin: 0;
+    /* Remove o espaço interno */
+    padding: 0;
+    /* Tamanho das caixas */
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body.splash {
+    /* Altura */
+    height: 100vh;
+    /* Fonte para os textos */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Gradiente verde para o fundo */
+    background: 
+        radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.12)),
+        radial-gradient(circle at 50% 35%, rgba(191, 255, 210, 0.2), transparent 60%),
+        linear-gradient(135deg, #129c4e 0%, #1fcf6b 50%, #07e768 100%);
+    /* Centralização total */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Alinhamento dos itens no centro */
+    align-items: center;
+    /* Posição relativa para os textos */
+    position: relative;
+}
+
+/* Estilização dos textos informativos */
+.info {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos */
+label {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização das opções */
+option {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização do container principal */
+.splash-container {
+    /* Organiza os elementos em colunas */
+    text-align: center;
+    /* Cor dos textos */
+    color: white;
+    /* Ajuste fino */
+    margin-top: -40px;
+}
+
+/* Estilização da logomarca */
+.logo {
+    /* Tamanho da logomarca */
+    width: 120px;
+    /* Espaço externo abaixo da logomarca */
+    margin-bottom: 0.5px;
+    /* Animação suave na logomarca */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.logo:hover {
+    /* Aumenta levemente a imagem */
+    transform: scale(1.08);
+    /* Deixa a imagem mais viva */
+    filter: brightness(1.1);
+}
+
+/* Estilização do título principal */
+h1 {
+    /* Tamanho da fonte de texto */
+    font-size: 38px;
+    /* Espaço externo abaixo de um elemento */
+    margin-bottom: 10px;
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso da fonte */
+    font-weight: 900;
+    /* Espaço entre as letras */
+    letter-spacing: -0.5px;
+}
+
+/* Estilização das listas */
+ul {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos */
+li {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos parágrafos */
+p {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos descritivos */
+.descricao {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+    /* Espaço externo abaixo de um elemento */
+    margin-bottom: 25px;
+}
+
+/* Estilização do botão da tela */
+.button-comecar {
+    /* Cor de fundo */
+    background-color: white;
+    /* Cor do texto */
+    color: #129c4e;
+    /* Sem bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Espaçamento interno */
+    padding: 10px 20px;
+    /* Tamnho da fonte de texto */
+    font-size: 14px;
+    /* Fonte do texto */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa a fonte mais leve e legível */
+    font-weight: 400;
+    /* Cursor */
+    cursor: pointer;
+    /* Animação suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse no botão */
+.button-comecar:hover {
+    /* Cor de fundo */
+    background-color: #f0f0f0;
+    /* Animação suave quando passar o mouse*/
+    transform: scale(1.05) translateY(-1px);
+    /* Sombra mais forte ao passar o mouse */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos pontos de carregamento */
+.pontos {
+    /* Espaço externo acima de um elemento */
+    margin-top: 40px;
+    /* Posição absoluta */
+    position: fixed;
+    /* Distância do botão para o fundo */
+    bottom: 30px;
+    /* Esquerda */
+    left: 50%;
+    /* Transformação */
+    transform: translateX(-50%);
+    /* Garante que fique acima */
+    z-index: 100;
+}
+
+/* Estilização de cada um dos pontos */
+.pontos span {
+    /* Ocupa toda a largura */
+    display: inline-block;
+    /* Largura */
+    width: 6px;
+    /* Altura */
+    height: 6px;
+    /* Margem */
+    margin: 0 3px;
+    /* Cor de fundo */
+    background-color: white;
+    /* Bordas arredondadas */
+    border-radius: 50%;
+    /* Opacidade */
+    opacity: 0.5;
+}
+
+/* Animação suave para os pontos */
+/* Efeito de carregamento */
+.pontos span:nth-child(1) {
+    animation: blink 1s infinite;
+}
+/* Atrasa um pouco mais */
+.pontos span:nth-child(2) {
+    animation: blink 1s infinite 0.2s;
+}
+/* Atrasa um pouco mais */
+.pontos span:nth-child(3) {
+    animation: blink 1s infinite 0.4s;
+}
+
+/* Keyframes */
+/* Controla a animação dos pontos */
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* ============================================== */
+/* == Final da estilização da página de splash == */
+/* ============================================== */

@@ -1,0 +1,309 @@
+/* =================================== */
+/* == Estilização do rodapé do site == */
+/* =================================== */
+
+/* Rodapé principal */
+.rodape {
+    /* Fundo em gradiente */
+    background: linear-gradient(155deg, #1fcf6b, #129c4e);
+    /* Cor padrão dos textos */
+    color: #cbd5df;
+    /* Espaçamento interno */
+    padding: 40px 20px 0;
+    /* Largura total */
+    width: 100%;
+    /* Centraliza textos */
+    text-align: center;
+    /* Espaço acima */
+    margin-top: 40px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* == Estilização do container das colunas == */
+
+/* Container principal */
+.rodape-container {
+    /* Flexbox */
+    display: flex;
+    /* Distribuição */
+    justify-content: space-between;
+    /* Permite quebra */
+    flex-wrap: wrap;
+    /* Espaçamento entre colunas */
+    gap: 30px;
+    /* Largura máxima */
+    max-width: 1000px;
+    /* Centralização */
+    margin: 0 auto;
+    /* Espaçamento inferior */
+    padding-bottom: 30px;
+}
+
+/* == Estilização das colunas == */
+
+/* Colunas individuais */
+.rodape-col {
+    /* Largura flexível */
+    flex: 1;
+    /* Largura mínima */
+    min-width: 180px;
+    /* Alinhamento */
+    text-align: left;
+}
+
+/* Primeira coluna */
+.rodape-col:first-child {
+    /* Organização vertical */
+    display: flex;
+    /* Direção e ordem dos elementos */
+    flex-direction: column;
+    /* Alinhamento */
+    align-items: flex-start;
+}
+
+/* == Logomarca e idêntidade visual == */
+
+/* Área do logo */
+.rodape-logo-area,
+.logo-area,
+.logo-linha {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaçamento */
+    gap: 0;
+}
+
+/* Remove sublinhado */
+.logo-area a {
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+/* Logo do topo */
+.logo-topo {
+    /* Largura */
+    width: 55px;
+    /* Mantém proporção */
+    height: auto;
+    /* Remove desalinhamento */
+    display: block;
+}
+
+/* Logo do rodapé */
+.logo-rodape {
+    /* Largura */
+    width: 40px;
+    /* Altura */
+    height: 35px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Remove espaços */
+    display: block;
+}
+
+/* == Estilização da descrição do rodapé == */
+
+/* Área da descrição */
+.rodape-desc {
+    /* Espaço acima */
+    margin-top: 10px;
+    /* Remove deslocamento */
+    margin-left: 0;
+    /* Remove deslocamento */
+    padding-left: 0;
+    /* Alinhamento */
+    text-align: left;
+    /* Altura da linha */
+    line-height: 1.4;
+}
+
+/* Texto da descrição */
+.rodape-desc p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Largura da fonte */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 13px;
+    /* Cor */
+    color: #e3e6e4da;
+}
+
+/* == Estilização dos títulos das colunas == */
+
+/* Título principal */
+.rodape-col h3 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 900;
+    /* Cor */
+    color: #ffffff;
+    /* Remove margens */
+    margin: 0;
+}
+
+/* Estilização dos subtítulos */
+.rodape-col h4 {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 500;
+    /* Tamanho */
+    font-size: 15px;
+    /* Cor */
+    color: #ffffff;
+    /* Espaçamento */
+    margin-bottom: 10px;
+}
+
+/* == Estilização dos links do rodapé == */
+
+/* Links */
+.rodape-col a,
+.rodape-links a {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor */
+    color: #e3e6e4da;
+    /* Exibição */
+    display: block;
+    /* Espaçamento */
+    margin-bottom: 6px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Transição */
+    transition: 0.2s;
+}
+
+/* Hover dos links */
+.rodape-col a:hover,
+.rodape-links a:hover {
+    /* Clareia */
+    color: #ffffff;
+}
+
+/* Links extras */
+.rodape-links a {
+    margin: 0 10px;
+}
+
+/* == Estilização dos textos simples == */
+
+/* Parágrafos */
+.rodape-col p,
+.rodape p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 13px;
+    /* Cor */
+    color: #e3e6e4da;
+    /* Espaçamento abaixo */
+    margin-bottom: 6px;
+}
+
+/* == Estilização da área de contato == */
+
+/* Linha de contato */
+.contato-item {
+    /* Flexbox */
+    display: flex;
+    /* Alinhamento */
+    align-items: center;
+    /* Espaçamento */
+    gap: 8px;
+    /* Espaço inferior */
+    margin-bottom: 6px;
+}
+
+/* Ícones de contato */
+.icone-contato {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 25px;
+    /* Ajuste */
+    object-fit: contain;
+}
+
+/* Texto do contato */
+.contato-item p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* == Estilização das redes sociais == */
+
+/* Área das redes */
+.contato-redes {
+    /* Flexbox */
+    display: flex;
+    /* Espaçamento */
+    gap: 10px;
+    /* Espaço acima */
+    margin-top: 10px;
+}
+
+/* Ícones das redes */
+.icone-rede {
+    /* Largura */
+    width: 22px;
+    /* Altura */
+    height: 22px;
+    /* Cursor */
+    cursor: pointer;
+    /* Transição */
+    transition: 0.2s;
+}
+
+/* Hover dos ícones */
+.icone-rede:hover {
+    /* Elevação suave */
+    transform: scale(1.1);
+}
+
+/* == Estilização da parte inferior == */
+
+/* Linha inferior */
+.rodape-bottom {
+    /* Linha separadora */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Espaço acima */
+    margin-top: 10px;
+    /* Espaçamento interno acima */
+    padding-top: 25px;
+    /* Espaçamento interno abaixo */
+    padding-bottom: 85px;
+    /* Centralização */
+    text-align: center;
+    /* Largura total */
+    width: 100%;
+}
+
+/* Texto final */
+.rodape-bottom p {
+    /* Margem à esquerda */   
+    margin-left: 0;
+    /* Margem à direita */
+    margin-right: 0;
+}
+
+/* Padronização da fonte do rodapé */
+footer,
+footer p,
+footer a,
+footer span,
+footer li {
+    /* Fonte do rodapé */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* ============================================ */
+/* == Final da estilização do rodapé do site == */
+/* ============================================ */

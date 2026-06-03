@@ -1,0 +1,581 @@
+/* =================================== */
+/* == Estilização da tela de perfil == */
+/* =================================== */
+
+/* Página principal */
+.pagina-perfil {
+    /* Cor de fundo suave da página */
+    background: #eef3f1;
+    /* Remove margens padrão */
+    margin: 0;
+    /* Fonte principal */
+    font-family: 'Poppins', sans-serif;
+    /* Cor padrão dos textos */
+    color: #587a69;
+}
+
+/* Fundo abaixo da navegação */
+.pagina-perfil .topo-perfil {
+    /* Fundo em degradê verde */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Altura da faixa */
+    height: 180px;
+    /* Ocupa largura total */
+    width: 100%;
+    /* Mantém organização */
+    position: relative;
+    /* Camada inferior */
+    z-index: 1;
+}
+
+/* Área principal */
+.pagina-perfil .container {
+    /* Limite de largura */
+    max-width: 640px;
+    /* Centralização */
+    margin: -75px auto 35px;
+    /* Espaçamento lateral */
+    padding: 0 16px;
+    /* Mantém acima do topo */
+    position: relative;
+    /* Camada */
+    z-index: 2;
+}
+
+/* == Estilização do topo perfil == */
+
+/* Área avatar e textos */
+.pagina-perfil .perfil-topo {
+    /* Ativa flexbox */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 18px;
+    /* Espaço inferior */
+    margin-bottom: 18px;
+}
+
+/* Área textual */
+.pagina-perfil .perfil-titulo {
+    /* Organização vertical */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Centralização */
+    justify-content: center;
+}
+
+/* Título principal */
+.pagina-perfil .titulo-perfil {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 900;
+    /* Tamanho */
+    font-size: 34px;
+    /* Cor */
+    color: #2e744d;
+    /* Ajustes */
+    margin: 0;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+    /* Espaçamento inferior */
+    padding-bottom: 22px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Subtítulo */
+.pagina-perfil .sub-perfil {
+    /* Aproxima do título */
+    margin-top: -16px;
+}
+
+/* Descrição perfil */
+.pagina-perfil .descricao-perfil {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 400;
+    /* Tamanho */
+    font-size: 15px;
+    /* Cor */
+    color: #587a69;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Ajustes */
+    margin-top: -10px;
+    /* Espaço inferior */
+    margin-bottom: 23px;
+    /* Remove limite */
+    max-width: 100%;
+}
+
+/* == Avatar do perfil == */
+
+/* Fundo circular avatar */
+.pagina-perfil .avatar {
+    /* Dimensões */
+    width: 98px;
+    height: 98px;
+    /* Fundo branco */
+    background: #ffffff;
+    /* Formato circular */
+    border-radius: 50%;
+    /* Centralização */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Oculta excessos */
+    overflow: hidden;
+    /* Remove padding */
+    padding: 0;
+    /* Sombra */
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover avatar */
+.pagina-perfil .avatar:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Imagem avatar */
+.pagina-perfil .avatar img {
+    /* Dimensões */
+    width: 200px;
+    /* Altura */
+    height: 200px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Remove espaços */
+    display: block;
+    /* Remove margens */
+    margin: -4;
+    /* Remove padding */
+    padding: 0;
+    margin-top: 6px;
+    /* Move levemente para esquerda */
+    transform: translateX(-0.5px);
+}
+
+/* == Cards gerais == */
+
+/* Cards */
+.pagina-perfil .hero,
+.pagina-perfil .configuracoes-box {
+    /* Bordas */
+    border-radius: 20px;
+    /* Espaçamento interno */
+    padding: 18px 20px;
+    /* Espaço superior */
+    margin-top: 14px;
+    /* Sombra */
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover cards */
+.pagina-perfil .hero:hover,
+.pagina-perfil .configuracoes-box:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Card verde */
+.pagina-perfil .hero {
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor padrão */
+    color: #ffffff;
+}
+
+/* Card branco */
+.pagina-perfil .configuracoes-box {
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* == Títulos dos cards == */
+
+/* Linha título */
+.pagina-perfil .titulo-card {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+    /* Espaço inferior */
+    margin-bottom: 16px;
+}
+
+/* Títulos */
+.pagina-perfil .hero h2,
+.pagina-perfil .configuracoes-box h2 {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 700;
+    /* Tamanho */
+    font-size: 23px;
+    /* Espaço inferior */
+    margin: 0 0 18px;
+}
+
+/* Título card verde */
+.pagina-perfil .hero h2 {
+    /* Cor branca */
+    color: #ffffff;
+}
+
+/* Título configurações */
+.pagina-perfil .configuracoes-box h2 {
+    /* Cor verde */
+    color: #2e744d;
+}
+
+/* Ícones títulos */
+.pagina-perfil .titulo-card img,
+.pagina-perfil .icone-titulo {
+    /* Tamanho */
+    width: 34px;
+    height: 34px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita distorção */
+    flex-shrink: 0;
+    /* Alinhamento fino */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Centralização */
+    justify-content: center;
+    /* Ajuste vertical */
+    margin-top: -2px;
+}
+
+/* == Informações pessoais == */
+
+/* Área informações */
+.pagina-perfil .perfil-info {
+    /* Organização vertical */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Espaçamento */
+    gap: 14px;
+}
+
+/* Linha individual */
+.pagina-perfil .perfil-info .linha-info {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 4px;
+    /* Largura */
+    width: 100%;
+}
+
+/* Área esquerda */
+.pagina-perfil .perfil-info .conteudo-info {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Ícones */
+.pagina-perfil .linha-info img {
+    /* Tamanho */
+    width: 22px;
+    height: 22px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita compressão */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-perfil .linha-info p {
+    /* Remove margens */
+    margin: 0;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 14px;
+    /* Peso */
+    font-weight: 300;
+    /* Cor */
+    color: #ffffff;
+    /* Altura linha */
+    line-height: 1.4;
+}
+
+/* Ícone editar */
+.pagina-perfil .editar-info {
+    /* Tamanho */
+    width: 38px !important;
+    height: 38px !important;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita compressão */
+    flex-shrink: 0;
+    /* Opacidade */
+    opacity: 1;
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover editar */
+.pagina-perfil .editar-info:hover {
+    /* Pequeno zoom */
+    transform: scale(1.08);
+}
+
+/* == Configurações == */
+
+/* Área configurações */
+.pagina-perfil .configuracoes-box {
+    /* Organização */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Espaçamento */
+    gap: 14px;
+}
+
+/* Linha configuração */
+.pagina-perfil .config-item {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 18px;
+    /* Mantém alinhado */
+    justify-content: flex-start;
+}
+
+/* Área esquerda */
+.pagina-perfil .config-info {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Ícones */
+.pagina-perfil .config-info img {
+    /* Tamanho */
+    width: 22px;
+    height: 22px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita distorção */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-perfil .config-info p {
+    /* Remove margens */
+    margin: 0;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 14px;
+    /* Peso */
+    font-weight: 300;
+    /* Cor */
+    color: #587a69;
+    /* Altura linha */
+    line-height: 1.4;
+}
+
+/* == Campo select == */
+
+/* Select */
+.pagina-perfil select {
+    /* Fundo */
+    background: #f1f5f3;
+    /* Borda */
+    border: 1px solid #e4eee9;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Espaçamento */
+    padding: 10px 14px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #587a69;
+    /* Remove padrão */
+    appearance: none;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover select */
+.pagina-perfil select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* Focus select */
+.pagina-perfil select:focus {
+    /* Remove outline */
+    outline: none;
+    /* Fundo */
+    background: #ffffff;
+    /* Borda destaque */
+    border: 1px solid #bfe4cf;
+}
+
+/* == Checkbox custom == */
+
+/* Remove padrão */
+.pagina-perfil input[type="checkbox"] {
+    /* Remove aparência */
+    appearance: none;
+    /* Dimensões */
+    width: 48px;
+    height: 26px;
+    /* Fundo */
+    background: #f1f5f3;
+    /* Borda */
+    border: 1px solid #dfe9e4;
+    /* Formato */
+    border-radius: 30px;
+    /* Cursor */
+    cursor: pointer;
+    /* Posição */
+    position: relative;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Bolinha interna */
+.pagina-perfil input[type="checkbox"]::before {
+    /* Conteúdo obrigatório */
+    content: "";
+    /* Posição */
+    position: absolute;
+    /* Distância esquerda */
+    left: 4px;
+    /* Distância topo */
+    top: 3px;
+    /* Dimensões */
+    width: 18px;
+    height: 18px;
+    /* Fundo */
+    background: #587a69;
+    /* Formato */
+    border-radius: 50%;
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover checkbox */
+.pagina-perfil input[type="checkbox"]:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* Checkbox ativa */
+.pagina-perfil input[type="checkbox"]:checked {
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove borda */
+    border: 1px solid transparent;
+}
+
+/* Move bolinha */
+.pagina-perfil input[type="checkbox"]:checked::before {
+    /* Nova posição */
+    left: 24px;
+    /* Cor */
+    background: #ffffff;
+}
+
+/* == Links da conta == */
+
+/* Área links */
+.pagina-perfil .acesso-conta {
+    /* Centraliza */
+    text-align: center;
+    /* Espaço superior */
+    margin-top: 20px;
+}
+
+/* Container links */
+.pagina-perfil .links {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Botões links */
+.pagina-perfil .links a {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor */
+    color: #ffffff;
+    /* Espaçamento */
+    padding: 11px 20px;
+    /* Bordas */
+    border-radius: 12px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover links */
+.pagina-perfil .links a:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* ============================================== */
+/* == Final da estilização da página de perfil == */
+/* ============================================== */

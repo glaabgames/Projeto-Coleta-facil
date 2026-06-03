@@ -1,0 +1,3848 @@
+/* =================================== */
+/* == Estilização da tela de splash == */
+/* =================================== */
+
+/* Estilização das margens */
+* {
+    /* Remove a margem */
+    margin: 0;
+    /* Remove o espaço interno */
+    padding: 0;
+    /* Tamanho das caixas */
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body.splash {
+    /* Altura */
+    height: 100vh;
+    /* Fonte para os textos */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Gradiente verde para o fundo */
+    background: 
+        radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.12)),
+        radial-gradient(circle at 50% 35%, rgba(191, 255, 210, 0.2), transparent 60%),
+        linear-gradient(135deg, #129c4e 0%, #1fcf6b 50%, #07e768 100%);
+    /* Centralização total */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Alinhamento dos itens no centro */
+    align-items: center;
+    /* Posição relativa para os textos */
+    position: relative;
+}
+
+/* Estilização dos textos informativos */
+.info {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos */
+label {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização das opções */
+option {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização do container principal */
+.splash-container {
+    /* Organiza os elementos em colunas */
+    text-align: center;
+    /* Cor dos textos */
+    color: white;
+    /* Ajuste fino */
+    margin-top: -40px;
+}
+
+/* Estilização da logomarca */
+.logo {
+    /* Tamanho da logomarca */
+    width: 120px;
+    /* Espaço externo abaixo da logomarca */
+    margin-bottom: 0.5px;
+    /* Animação suave na logomarca */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.logo:hover {
+    /* Aumenta levemente a imagem */
+    transform: scale(1.08);
+    /* Deixa a imagem mais viva */
+    filter: brightness(1.1);
+}
+
+/* Estilização do título principal */
+h1 {
+    /* Tamanho da fonte de texto */
+    font-size: 38px;
+    /* Espaço externo abaixo de um elemento */
+    margin-bottom: 10px;
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso da fonte */
+    font-weight: 900;
+    /* Espaço entre as letras */
+    letter-spacing: -0.5px;
+}
+
+/* Estilização das listas */
+ul {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos */
+li {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos parágrafos */
+p {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização dos textos descritivos */
+.descricao {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa levemente mais fina */
+    font-weight: 300;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+    /* Espaço externo abaixo de um elemento */
+    margin-bottom: 25px;
+}
+
+/* Estilização do botão da tela */
+.button-comecar {
+    /* Cor de fundo */
+    background-color: white;
+    /* Cor do texto */
+    color: #129c4e;
+    /* Sem bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Espaçamento interno */
+    padding: 10px 20px;
+    /* Tamnho da fonte de texto */
+    font-size: 14px;
+    /* Fonte do texto */
+    font-family: 'Poppins', sans-serif;
+    /* Deixa a fonte mais leve e legível */
+    font-weight: 400;
+    /* Cursor */
+    cursor: pointer;
+    /* Animação suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse no botão */
+.button-comecar:hover {
+    /* Cor de fundo */
+    background-color: #f0f0f0;
+    /* Animação suave quando passar o mouse*/
+    transform: scale(1.05) translateY(-1px);
+    /* Sombra mais forte ao passar o mouse */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização dos pontos de carregamento */
+.pontos {
+    /* Espaço externo acima de um elemento */
+    margin-top: 40px;
+    /* Posição absoluta */
+    position: fixed;
+    /* Distância do botão para o fundo */
+    bottom: 30px;
+    /* Esquerda */
+    left: 50%;
+    /* Transformação */
+    transform: translateX(-50%);
+    /* Garante que fique acima */
+    z-index: 100;
+}
+
+/* Estilização de cada um dos pontos */
+.pontos span {
+    /* Ocupa toda a largura */
+    display: inline-block;
+    /* Largura */
+    width: 6px;
+    /* Altura */
+    height: 6px;
+    /* Margem */
+    margin: 0 3px;
+    /* Cor de fundo */
+    background-color: white;
+    /* Bordas arredondadas */
+    border-radius: 50%;
+    /* Opacidade */
+    opacity: 0.5;
+}
+
+/* Animação suave para os pontos */
+/* Efeito de carregamento */
+.pontos span:nth-child(1) {
+    animation: blink 1s infinite;
+}
+/* Atrasa um pouco mais */
+.pontos span:nth-child(2) {
+    animation: blink 1s infinite 0.2s;
+}
+/* Atrasa um pouco mais */
+.pontos span:nth-child(3) {
+    animation: blink 1s infinite 0.4s;
+}
+
+/* Keyframes */
+/* Controla a animação dos pontos */
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* ============================================== */
+/* == Final da estilização da página de splash == */
+/* ============================================== */
+
+/* ================================== */
+/* == Estilização da tela de index == */
+/* ================================== */
+
+/* Aplica o fundo na raiz visível */
+body.pagina-index {
+    /* Altura miníma da página */
+    min-height: 100vh;
+    /* Cor de fundo */
+    background-color: #eef3f1;
+}
+
+/* Estiliza todos os elementos da página */
+* {
+    /* Remove a margem */
+    margin: 0;
+    /* Remove o espaçamento interno */
+    padding: 0;
+    /* Tamanho das caixas */
+    box-sizing: border-box;
+}
+
+/* Estilização principal da tela */
+.pagina-index {
+    /* Remove o flex da tela de splash */
+    display: block;
+    /* Altura automática */
+    height: auto;
+    /* Garante fundo na tela toda */
+    min-height: 100vh;
+    /* Cor de fundo */
+    background-color: #cfdad3;
+    /* Fonte padrão do sistema */
+    font-family: 'Poppins', sans-serif;
+    /* Ocupação da coluna */
+    flex-direction: column;
+}
+
+/* Barra superior */
+.topo {
+    /* Ativa flex */
+    display: flex;
+    /* Mantém em linha (lado a lado) */
+    flex-direction: row;
+    /* Joga esquerda e direita para extremos */
+    justify-content: space-between;
+    /* Alinha verticalmente */
+    align-items: center;
+    /* Fundo */
+    background: linear-gradient(135deg, #1fcf6b, #129c4e);
+    /* Espaçamento interno */
+    padding: 15px 25px;
+}
+
+/* Estilização da logomarca na barra */
+.logo-area {
+    /* Alinha os itens em linha */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Espaço entre logo e texto */
+    gap: -0.2px;
+}
+
+/* Logo do topo */
+.logo-topo {
+    /* Define o tamanho da imagem */
+    width: 50px;
+    /* Transição suave */
+    transition: 0.3s;
+    /* Cursor indica interação */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse na logo */
+.logo-topo:hover {
+    /* Aumenta levemente */
+    transform: scale(1.08);
+    /* Ilumina um pouco */
+    filter: brightness(1.1);
+}
+
+/* Nome do sistema */
+.nome-site {
+    /* Fonte padrão da splash */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 20px;
+    /* Deixa o texto mais forte */
+    font-weight: 900;
+    /* Cor branca */
+    color: white;
+    /* Transição suave */
+    transition: 0.3s;
+    /* Cursor */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse no nome */
+.nome-site:hover {
+    /* Leve aumento */
+    transform: scale(1.05);
+    /* Pequena subida */
+    transform: translateY(-1px);
+    /* Ilumina */
+    filter: brightness(1.1);
+}
+
+/* Container da direita do topo */
+.topo-direita {
+    /* Ativa flexbox */
+    display: flex;
+    /* Alinha todos os itens na mesma linha vertical */
+    align-items: center;
+    /* Espaçamento entre os elementos */
+    gap: 10px;
+}
+
+/* Botões do topo */
+.btn-topo {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor do texto */
+    color: white;
+    /* Fundo transparente claro */
+    background: rgba(255, 255, 255, 0.2);
+    /* Espaçamento interno */
+    padding: 6px 12px;
+    /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Transição suave */
+    transition: 0.3s;
+}
+
+/* Hover dos botões */
+.btn-topo:hover {
+    /* Fundo mais claro */
+    background: rgba(255, 255, 255, 0.35);
+    /* Leve movimento */
+    transform: translateY(-2px);
+}
+
+/* Ícone de perfil */
+.icone-perfil {
+    /* Tamanho da imagem */
+    width: 30px;
+    /* Mantém proporção */
+    height: auto;
+    /* Deixa redondo */
+    border-radius: 50%;
+    /* Remove desalinhamento padrão de imagem */
+    display: block;
+}
+
+/* Hover do perfil */
+.icone-perfil:hover {
+    /* Leve aumento */
+    transform: scale(1.05);
+}
+
+/* Estilização da barra de navegação */
+.barra-nav {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Alinhamento */
+    display: flex;
+    /* Centralização dos elementos */
+    align-items: center;
+    /* Espaçamento interno */
+    padding: 20px 40px;
+    /* Ocupa toda a tela */
+    width: 100vw;
+    /* Centraliza fora do container */
+    margin-left: calc(-50vw + 50%);
+    /* Centralização */
+    justify-content: center;
+    /* Espaço entre elementos */
+    gap: 20px;
+    /* Bordas arredondadas */
+    border-radius: 0px;
+    /* Sombras */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem de cima */
+    margin-top: -2px;
+}
+
+/* Estilização do rodapé */
+.rodape-container {
+    /* largura máxima */
+    max-width: 1000px;
+    /* Margem automática */
+    margin: 0 auto;
+}
+
+/* Estilização dos links da barra */
+.barra-nav a {
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+    /* Cor dos links */
+    color: #3b5f4d;
+    /* Tamanho */
+    font-weight: 500;
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.barra-nav a:hover {
+    /* Cor */
+    color: #1f7a45;
+}
+
+/* Estilização do menu central de navegação */
+.menu-central a {
+    /* Espaçamento entre links */
+    margin: 0 10px;
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor branca */
+    color: white;
+    /* Peso médio */
+    font-weight: 500;
+}
+
+/* Perfil de usuário */
+.perfil-topo {
+    /* Margem da esquerda */
+    margin-left: auto;
+}
+
+/* Estilização do ícone de perfil */
+.icone-perfil {
+    /* Tamanho da imagem */
+    width: 30px;
+    /* Deixa redondo */
+    border-radius: 50%;
+}
+
+/* Estilização do conteúdo principal da tela */
+.container {
+    /* Define largura máxima */
+    max-width: 750px;
+    /* Centraliza na tela */
+    margin: 25px auto;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* Remove aparência de caixa dos cards gerais */
+.card {
+    /* Remove fundo */
+    background: transparent;
+    /* Remove sombra */
+    box-shadow: none;
+    /* Remove bordas arredondadas */
+    border-radius: 0;
+    /* Mantém espaçamento */
+    padding: 10px 0;
+    /* Espaço entre seções */
+    margin-bottom: 15px;
+}
+
+/* Títlo do card principal */
+.card h1 {
+    font-family: 'Nunito', sans-serif;
+    /* Cor do texto */
+    color: #1f5e3b;
+    /* Margem */
+    margin-bottom: 5px;
+}
+
+/* Texto do card principal */
+.card p {
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Estilização das estatísticas */
+.stats {
+    /* Define layout em linha */
+    display: flex;
+    /* Distribui os elementos com espaço entre eles */
+    justify-content: space-between;
+    /* Espaçamento entre as caixas */
+    gap: 15px;
+    /* Espaço acima da seção */
+    margin-top: 25px;
+}
+
+/* Caixas das estatísticas */
+.stat-box {
+    /* Faz todas as caixas terem o mesmo tamanho */
+    flex: 1;
+    /* Cor de fundo branca */
+    background: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Centraliza o conteúdo */
+    text-align: center;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Suaviza animações */
+    transition: 0.25s;
+}
+
+/* Efeito ao passar o mouse */
+.stat-box:hover {
+    /* Move levemente para cima */
+    transform: translateY(-5px);
+    /* Aumenta a sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Filtro */
+    filter: brightness(0.95);
+}
+
+/* Números das estatísticas */
+.stat-box h3 {
+    /* Cor verde */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-size: 22px;
+}
+
+/* Texto das estatísticas */
+.stat-box p {
+    /* Tamanho menor */
+    font-size: 13px;
+    /* Cor cinza esverdeado */
+    color: #6c7f75;
+}
+
+/* Títulos gerais */
+h2 {
+    /* Define fonte destacada */
+    font-family: 'Nunito', sans-serif;
+    /* Cor verde escuro */
+    color: #1f5e3b;
+    /* Espaçamento acima e abaixo */
+    margin: 15px 0 10px;
+}
+
+/* Espaçamento entre as seções principais */
+.container section {
+    /* Espaço abaixo de cada bloco */
+    margin-bottom: 25px;
+}
+
+/* Estilização da mensagem de boas-vindas */
+.welcome {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Estilização da fonte do texto descritivo */
+.welcome p {
+    /* Estilização do body */
+    font-weight: 400;
+}
+
+/* Estilização do título principal de boas-vindas */
+.welcome h1 {
+    color: #1f5e3b;
+}
+
+/* Estilização da caixa sobre o projeto */
+.sobre-box {
+    /* Suaviza a animação */
+    transition: 0.25s;
+}
+
+/* Layout do bloco sobre o projeto */
+.sobre-conteudo {
+    /* Ativa o flexbox */
+    display: flex;
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+    /* Espaço entre os elementos */
+    gap: 10px;
+    /* Alinha verticalmente imagem e título */
+    align-items: center;
+}
+
+/* Layout do bloco de objetivo */
+.objetivo-conteudo {
+    /* Ativa o flexbox */
+    display: flex;
+    /* Permite quebra de linha */
+    flex-wrap: wrap;
+    /* Espaçamento entre os elementos */
+    gap: 10px;
+    /* Alinha imagem e título */
+    align-items: center;
+}
+
+/* Imagem dos blocos */
+.sobre-conteudo img {
+    /* Define tamanho menor da imagem */
+    width: 32px;
+    /* Impede a imagem de esticar */
+    flex-shrink: 0;
+}
+
+/* Ajusta somente a imagem da seção "Nosso objetivo" */
+.objetivo-conteudo img {
+    /* Define um tamanho menor que o padrão */
+    width: 25px;
+    /* Mantém proporção da imagem */
+    height: auto;
+    /* Evita que a imagem distorça o layout */
+    flex-shrink: 0;
+}
+
+/* Títulos ao lado das imagens */
+.sobre-conteudo h2,
+.objetivo-conteudo h2 {
+    /* Remove margem padrão */
+    margin: 0;
+}
+
+/* Texto informativo da seção sobre o projeto */
+.sobre-conteudo p {
+    /* Define nova fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Cor do texto */
+    color: #3f6f5a;
+    /* Tamanho do texto */
+    font-size: 14px;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Deixa mais leve */
+    font-weight: 300;
+}
+
+/* Texto fica abaixo */
+.objetivo-conteudo p {
+    /* Faz o texto quebrar para linha de baixo */
+    width: 100%;
+    /* Pequeno espaço acima */
+    margin-top: 5px;
+}
+
+/* Hover do sobre */
+.sobre-box:hover {
+    /* Sobe levemente */
+    transform: translateY(-3px);
+    /* Leve aumento da sombra */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Bloco de objetivos */
+.objetivo {
+    /* Fundo verde */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Texto branco */
+    color: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaço acima */
+    margin-top: 15px;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+    /* Suaviza a animação */
+    transition: 0.25s;
+}
+
+/* Hover do objetivo */
+.objetivo:hover {
+    /* Sobe levemente */
+    transform: translateY(-3px);
+    /* Leve aumento da sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+}
+
+/* Título dentro do objetivo */
+.objetivo h2 {
+    /* Mantém o texto branco */
+    color: white;
+}
+
+/* Estilização do texto da seção "Nosso objetivo" */
+.objetivo p {
+    /* Mantém o texto branco */
+    color: white;
+}
+
+/* Título da seção */
+.titulo-sec {
+    /* Espaçamento acima e abaixo */
+    margin: 28px 0 18px;
+}
+
+/* Grade de navegação */
+.grid {
+    /* Ativa layout em grade */
+    display: grid;
+    /* Define 2 colunas iguais */
+    grid-template-columns: repeat(2, 1fr);
+    /* Espaçamento mais proporcional */
+    gap: 18px;
+    /* Suaviza a animação */
+    transition: 0.25s;
+    /* Margem acima */
+    margin-top: 24px;
+}
+
+/* Remove sublinhado da navegação rápida */
+.grid-item,
+.grid-item * {
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+/* Container do card */
+.grid-item {
+    /* Define layout flexível */
+    display: flex;
+    /* Organiza os elementos em coluna */
+    flex-direction: column;
+    /* Alinha os itens à esquerda */
+    align-items: flex-start;
+    /* Cor de fundo branca (balão) */
+    background: white;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Sombra leve para efeito de cartão */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Transição SUAVE (mais lenta e natural) */
+    transition: transform 0.30s ease;
+}
+
+/* Efeito ao passar o mouse */
+.grid-item:hover {
+    /* Movimento mais leve */
+    transform: translateY(-4px);
+    /* Sombra um pouco mais suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Fundo levemente alterado */
+    background: #f2f7f4;
+}
+
+/* Estilização dos textos */
+.grid-item p {
+    /* Cor do texto */
+    color: #1f5e3b;
+    /* Tamanho da fonte do título */
+    font-size: 15px;
+    /* Peso da fonte */
+    font-weight: 400;
+}
+
+/* Estilização dos textos */
+.grid-item span {
+    /* Tamanho da fonte */
+    font-size: 12px;
+    /* Cor do texto */
+    color: #6c7f75;
+}
+
+/* Ícone */
+.grid-item img {
+    /* Define a largura do ícone */
+    width: 40px;
+    /* Espaço abaixo do ícone */
+    margin-bottom: 8px;
+}
+
+/* Descrição mais leve */
+.grid-item span {
+    /* Tamanho da fonte menor */
+    font-size: 12px;
+    /* Cor mais suave */
+    color: #6c7f75;
+    /* Espaço acima do texto */
+    margin-top: 2px;
+}
+
+/* Estilização da seção sobre o projeto */
+.sobre-box {
+    /* Cor de fundo */
+    background: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem acima */
+    margin-top: 15px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de index == */
+/* ============================================= */
+
+/* ======================================= */
+/* == Estilização da tela de calendário == */
+/* ======================================= */
+
+/* Estilização principal da página */
+.pagina-calendario {
+    /* Cor de fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização do container principal */
+.pagina-calendario .container {
+    /* Largura */
+    max-width: 750px;
+    /* Margem */
+    margin: 25px auto;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* Remove o menu anterior */
+.pagina-calendario .menu {
+    /* Remove o menu anterior */
+    display: none;
+}
+
+/* == Cabeçalho == */
+
+/* Estilização da introdução */
+.pagina-calendario .intro-calendario {
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Estilização do título principal */
+.pagina-calendario h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho */
+    font-size: 40px;
+    /* Cor */
+    color: #2e744d;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Estilização dos textos */
+.pagina-calendario .container>p,
+.pagina-calendario .intro-calendario p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.6;
+    /* Margem acima */
+    margin-top: 0;
+    /* Margem abaixo */
+    margin-bottom: 20px;
+}
+
+/* == Cards == */
+
+/* Estilização dos cards */
+.pagina-calendario .card {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor do texto */
+    color: white;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Margem abaixo */
+    margin-bottom: 15px;
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Animação suave dos cards */
+.pagina-calendario .card:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* == Estilo dos títulos == */
+
+/* Estilização dos subtítulos */
+.pagina-calendario h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 600;
+    /* Cor */
+    color: white;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Linha dos títulos */
+.campo-titulo {
+    /* Remove a margem */
+    display: flex;
+    /* Centraliza os elementos */
+    align-items: center;
+    /* Espaço entre os elementos */
+    gap: 8px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Ícones */
+.icone-campo {
+    /* Largura */
+    width: 27px;
+    /* Altura */
+    height: 27px;
+    /* Ajusta a imagem */
+    object-fit: contain;
+    /* Ocupa toda a largura */
+    display: block;
+    /* Elevação */
+    transform: translateY(1px);
+}
+
+/* == Estilo dos selects == */
+
+/* Estilização dos campos de selecionar */
+.pagina-calendario select {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 12px 14px;
+    /*  Bordas arredondadas */
+    border-radius: 12px;
+    /* Remove as bordas */
+    border: none;
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #587a69;
+    /* Remove a estilização nativa */
+    appearance: none;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Animação leve */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-calendario select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+/* Foco */
+.pagina-calendario select:focus {
+    /* Remove o contorno */
+    outline: none;
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Estilo da maldura */
+    border: 1px solid #bfe4cf;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.10);
+}
+
+/* == Lista da coleta == */
+
+/* Estilização da lista */
+.pagina-calendario .lista-coleta {
+    /* Margem acima */
+    margin-top: 20px;
+    /* Remove o estilo */
+    list-style: none;
+    /* Espaçamento interno */
+    padding: 0;
+}
+
+/* Cards dos dias */
+.pagina-calendario .dia,
+.pagina-calendario .lista-coleta li {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Cria espaços iguais entre os itens */
+    justify-content: space-between;
+    /* Centraliza os elementos */
+    align-items: center;
+    /* Cor de fundo */
+    background: white;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-bottom: 12px;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Sombra das caixas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-calendario .dia:hover,
+.pagina-calendario .lista-coleta li:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Informações */
+.pagina-calendario .dia .info {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Textos */
+.pagina-calendario .dia strong,
+.pagina-calendario .dia p {
+    /* Cor dos textos */
+    color: #3f976e;
+    /* Tamanho da fonte */
+    font-weight: 400;
+}
+
+/* Fonte */
+.pagina-calendario .dia span,
+.pagina-calendario .info,
+.pagina-calendario .tipo-coleta {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Cor */
+    color: #587a69;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Dimensões da fonte */
+    font-weight: 300;
+}
+
+/* == Tags == */
+
+/* Estilização das tags */
+.pagina-calendario .tag {
+    /* Espaçamento interno */
+    padding: 5px 10px;
+    /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Tamanho da fonte */
+    font-size: 12px;
+}
+
+/* Estilização da tag "reciclável" */
+.pagina-calendario .reciclavel {
+    /* Cor de fundo */
+    background: #ecfdeb;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */ 
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+}
+
+/* Estilização da tag de "orgânico" */
+.pagina-calendario .organico {
+    /* Cor de fundo */
+    background: #fdf7eb;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+}
+
+/* == Botão de reclamação == */
+
+/* Estilização do atalho para a tela de comentários */
+.pagina-calendario .btn-reclamacao {
+    /* Ocupa toda a largura */
+    display: block;
+    /* Largura */
+    max-width: 400px;
+    /* Margem */
+    margin: 25px auto 0;
+    /* Centralização */
+    text-align: center;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cpr */
+    color: white;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Remove o sublinhado */
+    text-decoration: none;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Animação suave */
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+/* Animação suave */
+.pagina-calendario .btn-reclamacao:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* == Rodapé da página == */
+
+/* Estilização da descrição e contatos */
+.pagina-calendario .rodape-desc,
+.pagina-calendario .contato-item {
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Força a cor do texto */
+    color: #dfdfdf !important;
+}
+
+/* ================================================== */
+/* == Final da estilização da página de calendário == */
+/* ================================================== */
+
+/* ================================== */
+/* == Estilização da tela de dicas == */
+/* ================================== */
+
+/* Página principal */
+.pagina-dicas {
+    /* Cor de fundo */
+    background-color: #eef3f1;
+}
+
+/* Fonte padrão */
+body.pagina-dicas {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* == Containers == */
+
+/* Estilização do container principal */
+.pagina-dicas .container-principal {
+    /* Largura */
+    max-width: 700px;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+}
+
+/* Estilização dos containers e introdução */
+.pagina-dicas .container,
+.pagina-dicas .intro-dicas {
+    /* Tamanho da fonte */
+    max-width: 750px;
+    /* Margem */
+    margin: 25px auto 20px;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* == Estilização da introdução == */
+
+/* Estilização da introdução */
+.pagina-dicas .intro-dicas-conteudo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Alinha */
+    justify-content: space-between;
+    /* Espaço entre elementos */
+    gap: 20px;
+}
+
+/* Estilo da introdução */
+.pagina-dicas .intro-texto {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Alinha os itens em colunas */
+    flex-direction: column;
+}
+
+/* Estilização da introdução */
+.pagina-dicas .intro-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 12px;
+}
+
+/* Estilização dos títulos e subtítulos */
+.pagina-dicas .intro-linha h1,
+.pagina-dicas .titulo-linha h2 {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilo dos textos */
+.pagina-dicas .intro-linha p {
+    /* Margem acima */
+    margin-top: 5px;
+}
+
+/* Estilo dos textos */
+.pagina-dicas .intro-dicas p,
+.pagina-dicas .intro-linha p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Altura da linha */
+    line-height: 1.6;
+    /* Cor */
+    color: #587a69;
+    /* Opacidade */
+    opacity: 0.9;
+}
+
+/* Estilização da imagem de introdução */
+.pagina-dicas .intro-img {
+    /* Largura */
+    width: 110px;
+    /* Altura */
+    height: auto;
+    /* Ajusta imagem sem cortar */
+    object-fit: contain;
+    /* Remove */
+    flex-shrink: 0;
+}
+
+/* == Estilização dos títulos == */
+
+/* Estilização do título da página */
+body.pagina-dicas h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 40px;
+    /* Cor */
+    color: #2e744d !important;
+    /* Margem acima */
+    margin-top: -0.2px;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Estilização geral do h2 */
+h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Cor */
+    color: #1f5e3b;
+    /* Margem */
+    margin: 15px 0 10px;
+}
+
+/* Estilo da linha do título */
+.pagina-dicas .titulo-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Tamanho da fonte */
+.pagina-dicas .icone-titulo {
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+}
+
+/* == Cards == */
+
+/* Estilização dos cards */
+.pagina-dicas .card {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra da caixa */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-dicas .card:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* Primeiro card branco */
+.pagina-dicas .card:first-child {
+    /* Cor de fundo */
+    background: #ffffff;
+}
+
+/* Título gigante */
+.pagina-dicas .card h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 55px;
+    /* Força a cor do texto */
+    color: #2e744d !important;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Títulos dos cards */
+.pagina-dicas .card h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 700;
+    /* Tamanho da fonte */
+    font-size: 24px;
+    /* Remove a margem */
+    margin: 0;
+    /* Cor */
+    color: #ffffff;
+}
+
+/* Títulos do primeiro card */
+.pagina-dicas .card:first-child h2 {
+    /* Cor */
+    color: #2e744d;
+}
+
+/* Textos */
+.pagina-dicas .card p,
+.pagina-dicas .card li {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da linha */
+    line-height: 1.6;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+    /* Cor */
+    color: #ffffff;
+}
+
+/* Ajuste específico dos parágrafos */
+.pagina-dicas .card p {
+    /* Margem acima */
+    margin-top: 0;
+    /* Margem abaixo */
+    margin-bottom: 12px;
+}
+
+/* Textos do primeiro card */
+.pagina-dicas .card:first-child p {
+    /* Cor */
+    color: #587a69;
+}
+
+/* == Listas == */
+
+/* Estilização das listas */
+.pagina-dicas .card ul,
+.pagina-dicas .texto-dica ul {
+    /* Espaçamento interno à esquerda */
+    padding-left: 18px;
+    /* Margem acima */
+    margin-top: 8px;
+}
+
+/* Estilização dos textos */
+.pagina-dicas .texto-dica p,
+.pagina-dicas .texto-dica li {
+    /* Margem */
+    margin-bottom: 6px;
+}
+
+/* Estilo das imagens */
+
+/* Estilização da caixa de dicas */
+.pagina-dicas .dica-box {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 18px;
+}
+
+/* Estilização da imagem */
+.pagina-dicas .img-dica {
+    /* Largura */
+    width: 90px;
+    /* Altura */
+    height: 90px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+    /* Remove */
+    flex-shrink: 0;
+}
+
+/* Estilizção do texto */
+.pagina-dicas .texto-dica {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* == Card de organização == */
+
+/* Estilização do card */
+.pagina-dicas .card-organizacao,
+.pagina-dicas .card.organizacao-lixo {
+    /* Cor de fundo */
+    background: #ffffff !important;
+    /* Força a cor do texto */
+    color: #587a69 !important;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Bardas à esquerda */
+    border-left: 6px solid #1f9452;
+    /* Estilo de moldura */
+    border: 1px solid #e6e6e6;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.pagina-dicas .card-organizacao:hover,
+.pagina-dicas .card.organizacao-lixo:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+    /* Sombra da caixa */
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Cor para os textos */
+.pagina-dicas .card.organizacao-lixo p,
+.pagina-dicas .card.organizacao-lixo li {
+    /* Cor */
+    color: #587a69 !important;
+}
+
+/* Cor para os títulos e subtítulos */
+.pagina-dicas .card.organizacao-lixo h1,
+.pagina-dicas .card.organizacao-lixo h2 {
+    /* Cor */
+    color: #1f5e3b !important;
+}
+
+/* == Itens de resíduos == */
+
+/* Estilização dos itens */
+.pagina-dicas .item-lixo,
+.item-residuo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* ícones */
+.pagina-dicas .icone-item,
+.icone-residuo {
+    /* Ajusta os itens em containers */
+    object-fit: contain;
+}
+
+/* Estilização dos ícones */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 20px;
+    /* Margem acima */
+    margin-top: 3px;
+}
+
+/* Estilização do ícone */
+.icone-residuo {
+    /* Largura */
+    width: 24px;
+    /* Altura */
+    height: 24px;
+    /* Elevação */
+    transform: translateY(-7px);
+}
+
+/* Estilização dos textos */
+.pagina-dicas .item-lixo p,
+.item-residuo p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* == Ajustes de imagem == */
+
+/* Ajustes de imagem */
+.pagina-dicas img[src*="dicas-coleta"] {
+    /* Tamanho da imagem */
+    transform: scale(1.7);
+}
+
+/* Estilização do card de organização do lixo */
+.pagina-dicas .card-organizacao {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Margem abaixo */
+    margin-bottom: 18px;
+    /* Sombra leve */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    /* Estilização da moldura */
+    border-left: 6px solid #1f9452;
+    /* Animação leve */
+    transition: 0.2s;
+}
+
+/* Animação leve */
+.pagina-dicas .card-organizacao:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+    /* Sombra leve */
+    box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* Força as cores para o card */
+.pagina-dicas .card.organizacao-lixo {
+    /* Força a cor de fundo */
+    background: #ffffff !important;
+    /* Força a cor do texto */
+    color: #587a69 !important;
+    /* Estilização da moldura */
+    border: 1px solid #e6e6e6;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+/* Estilização dos textos internos */
+.pagina-dicas .card.organizacao-lixo p,
+.pagina-dicas .card.organizacao-lixo li {
+    /* Força a cor */
+    color: #587a69 !important;
+    /* Espaçamento vertical das linhas */
+    line-height: 2;
+    /* Espaço entre blocos de texto */
+    margin-bottom: 8px;
+}
+
+/* Estilização dos títulos e subtítulos */
+.pagina-dicas .card.organizacao-lixo h2,
+.pagina-dicas .card.organizacao-lixo h1 {
+    /* Força a cor */
+    color: #1f5e3b !important;
+}
+
+/* Força todos os cards da página a terem a mesma largura */
+.pagina-dicas .container {
+    /* Largura */
+    max-width: 750px;
+    /* Margem */
+    margin: 0 auto;
+}
+
+/* Estilização dos cards */
+.pagina-dicas .container .card {
+    /* Largura */
+    max-width: 100%;
+    /* Ocupa toda a largura */
+    display: block;
+}
+
+/* Remove qualquer comportamento diferente dos cards brancos */
+.pagina-dicas .card.organizacao-lixo {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+}
+
+/* Garante que o último card não fique diferente */
+.pagina-dicas .container .card:last-child {
+    /* Força a largura */
+    width: 100% !important;
+}
+
+/* Estilização do título */
+.pagina-dicas .titulo-linha {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+}
+
+/* Remove deslocamentos do h2 */
+.pagina-dicas .titulo-linha h2 {
+    /* Remove margem */
+    margin: 0;
+    /* Altura da linha */
+    line-height: 1;
+}
+
+/* Garante que o ícone não puxe o alinhamento */
+.pagina-dicas .icone-titulo {
+    /* Ocupa toda a largura */
+    display: block;
+}
+
+/* Estilização da linha com o ícone e texto */
+.pagina-dicas .item-lixo {
+    /* Ativa flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 8px;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Ícone ao lado do texto */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 18px;
+    /* Altura */
+    height: 18px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+}
+
+/* Remove a margem dos textos */
+.pagina-dicas .item-lixo p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização geral */
+.pagina-dicas .titulo-linha,
+.pagina-dicas .item-lixo {
+    /* Ativa a flebox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Força a mesma largura de coluna para os ícones */
+.pagina-dicas .icone-titulo,
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+}
+
+/* Centralização */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 18px;
+    /* Altura */
+    height: 18px;
+    /* Margem à esquerda */
+    margin-left: 5px;
+}
+
+/* Estilização das grid-cards */
+.pagina-dicas .grid-cards {
+    /* Ativa a grid */
+    display: grid;
+    /* Quantas colunas terá e qual o tamanho delas */
+    grid-template-columns: 1fr 1fr;
+    /* Espaço entre elementos */
+    gap: 18px;
+}
+
+/* Estilização dos cards */
+.pagina-dicas .grid-cards .card {
+    /* Largura */
+    width: 100%;
+}
+
+/* Estilização do card de tipos de resíduos */
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) h2,
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) p {
+    /* Cor do texto */
+    color: #ffffff;
+}
+
+/* Ajuste na imagem da lâmpada */
+.pagina-dicas img[src*="dicas-coleta"] {
+    /* Tamanho da imagem */
+    transform: scale(1.7);
+}
+
+/* Estilização dos cards */
+.pagina-dicas .card {
+    /* Espaçamento interno */
+    padding: 22px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os elementos na vertical */
+    flex-direction: column;
+    /* Espaço entre elementos */
+    gap: 14px;
+}
+
+/* Estilização do título */
+.pagina-dicas .titulo-linha {
+    /* Margem abaixo */
+    margin-bottom: 19px;
+}
+
+/* Estilização das imagens dos itens de resíduos */
+.pagina-dicas .item-lixo {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Alinhamento dos itens */
+    align-items: flex-start;
+    /* Espaço entre elementos */
+    gap: 10px;
+}
+
+/* Organização dos itens de resíduos */
+.item-residuo{
+    /* Ativa a flexbox */
+    display: flex;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Margem acima */
+    margin-top: 0px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+    /* Melhor alinhamento */
+    align-items: flex-start;
+}
+
+/* Ícones dos resíduos */
+.icone-residuo{
+    /* Largura */
+    width: 28px;
+    /* Altura */
+    height: 28px;
+    /* Mantém proporção */
+    object-fit: contain;
+    /* Ajuste vertical */
+    transform: none;
+    /* Evita deformação */
+    flex-shrink: 0;
+    /* Garante renderização correta */
+    display: block;
+    /* Margem à esquerda*/
+    margin-left: -4px;
+}
+
+/* Texto dos resíduos */
+.item-residuo p{
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Estilização do ícone dos itens */
+.pagina-dicas .icone-item {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 20px;
+    /* Ajusta a imagem sem cortar */
+    object-fit: contain;
+    /* Margem acima */
+    margin-top: 3px;
+}
+
+/* Estilização dos textos */
+.pagina-dicas .item-lixo p {
+    /* Largura */
+    max-width: 80%;
+}
+
+/* Estilização do card de tipos de resíduos */
+.pagina-dicas .grid-cards .card:not(.organizacao-lixo) {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor do texto */
+    color: #ffffff;
+}
+
+
+/* Estilização da introdução */
+.pagina-dicas .intro-linha {
+    /* Quebra correta */
+    flex-direction: column;
+    /* Alinhamento dos itens */
+    align-items: flex-start;
+}
+
+/* Estilização do h1 */
+.pagina-dicas .intro-linha h1 {
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de dicas == */
+/* ============================================= */
+
+/* ======================================== */
+/* == Estilização da tela de comentários == */
+/* ======================================== */
+
+/* Página principal */
+body.pagina-comentarios {
+    /* Cor de fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* == Estilo do container == */
+
+/* Estilizaçõ do container */
+.pagina-comentarios .container {
+    /* Largura */
+    max-width: 750px;
+    /* Margem */
+    margin: 30px auto;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* == Estilização do cabeçalho == */
+
+/* Estilização do título */
+.pagina-comentarios h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 40px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Margem abaixo */
+    margin-bottom: 8px;
+}
+
+/* Estilização da descrição da página */
+.pagina-comentarios .welcome {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #6c7f75;
+    /* Margem acima */
+    margin-top: 0;
+    /* Margem abaixo */
+    margin-bottom: 20px;
+}
+
+/* == Estilo do card principal == */
+
+/* Página principal */
+.pagina-comentarios .card {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 16px;
+    /* Espaçamento interno */
+    padding: 25px;
+    /* Margem acima */
+    margin-top: 5px;
+    /* Sombra das caixas */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* == Estilo dos títulos e labels == */
+
+/* Estilo dos subtítulos */
+.pagina-comentarios h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Cor */
+    color: #1f5e3b;
+    /* Margem abaixo */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos textos */
+.pagina-comentarios label {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Largura */
+    font-weight: 400;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Cor */
+    color: #3f976e;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+}
+
+/* == Estilo do formulário == */
+
+/* Estilização do formulário */
+.pagina-comentarios form {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+    /* Espaço entre os elementos */
+    gap: 10px;
+}
+
+/* == Estilo de inputs, select e textarea == */
+
+/* Estilização geral */
+.pagina-comentarios input,
+.pagina-comentarios select,
+.pagina-comentarios textarea {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 12px 14px;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Bordas */
+    border: 1px solid #e4eee9;
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho do texto */
+    font-weight: 300;
+    /* Tamanho do texto */
+    font-size: 14px;
+    /* Cor do texto */
+    color: #587a69;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Remove estilo padrão */
+.pagina-comentarios select {
+    /* Remove o estilo padrão de navegador */
+    appearance: none;
+}
+
+/* Área de texto */
+.pagina-comentarios textarea {
+    /* Altura */
+    min-height: 100px;
+    /* Redimensiona a altura do elemento */
+    resize: vertical;
+}
+
+/* Placeholder */
+.pagina-comentarios input::placeholder,
+.pagina-comentarios textarea::placeholder {
+    /* Página principal */
+    font-weight: 300;
+    /* Cor */
+    color: #587a69;
+}
+
+/* Hover select */
+.pagina-comentarios select:hover {
+    /* Animação suave */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Focus geral */
+.pagina-comentarios input:focus,
+.pagina-comentarios select:focus,
+.pagina-comentarios textarea:focus {
+    /* Remove sublinhado */
+    outline: none;
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Bordas */
+    border: 1px solid #bfe4cf;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* == Estilo de input de arquivo == */
+
+/* Estilização do input */
+.pagina-comentarios input[type="file"] {
+    /* Bordas */
+    border: 2px dashed #9be0b8;
+    /* Fundo transparente */
+    background: transparent;
+    /* Centralização */
+    text-align: center;
+    /* Espaçamento interno */
+    padding: 25px;
+    /* Cursor */
+    cursor: pointer;
+}
+
+/* Botão interno */
+.pagina-comentarios input[type="file"]::file-selector-button {
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor */
+    color: white;
+    /* Remove bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Espaçamento interno */
+    padding: 10px 14px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Cursor */
+    cursor: pointer;
+    /* Margem à direita */
+    margin-right: 10px;
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Hover botão upload */
+.pagina-comentarios input[type="file"]::file-selector-button:hover {
+    /* Animação suave */
+    transform: translateY(-1px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* == Bloco de informações == */
+
+/* Estilização do bloco de informações */
+.pagina-comentarios .info {
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Espaçamento interno */
+    padding: 10px 12px;
+    /*Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Altura da linha */
+    line-height: 1.3;
+    /* Cor */
+    color: #587a69;
+    /* Margem acima */
+    margin-top: 15px;
+    /* Margem abaixo */
+    margin-bottom: 5px;
+}
+
+/* Título interno */
+.pagina-comentarios .info strong {
+    /* Ocupa toda a largura */
+    display: block;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Cor do texto */
+    color: #3f976e;
+    /* Margem à esquerda */
+    margin-left: 8px;
+    /* Margem abaixo */
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+.pagina-comentarios .info p {
+    /* Margem dos textos */
+    margin: 2px 0;
+}
+
+/* == Estilo das linhas com ícones == */
+
+/* Página principal */
+.pagina-comentarios .linha-info {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 5px;
+    /* Margem */
+    margin: 4px 0;
+    /* Margem à esquerda */
+    margin-left: -2px;
+}
+
+/* Imagens */
+.pagina-comentarios .linha-info img {
+    /* Largura */
+    width: 35px;
+    /* Altura */
+    height: 35px;
+    /* Ajusta a imagem sem distorcer */
+    object-fit: contain;
+}
+
+/* Ajuste da lâmpada */
+.pagina-comentarios .linha-info img[src*="dicas-coleta"] {
+    /* Largura */
+    width: 38px;
+    /* Altura */
+    height: 38px;
+}
+
+/* Texto */
+.pagina-comentarios .linha-info p {
+    /* Remove a margem */
+    margin: 0;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Altura da linha */
+    line-height: 1.2;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* == Estilização do botão enviar == */
+
+/* Estilo do botão enviar */
+.pagina-comentarios button {
+    /* Ocupa toda a largura */
+    display: block;
+    /* Define a largura */
+    width: 100%;
+    /* Margem */
+    margin: 20px 0 0;
+    /* Espaçamento interno */
+    padding: 14px;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove a borda */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Cor do texto */
+    color: white;
+    /* Cursor */
+    cursor: pointer;
+    /* Sombra leve */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    /* Animação leve */
+    transition: 0.25s ease;
+}
+
+/* Hover botão */
+.pagina-comentarios button:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra leve */
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+/* ================================================= */
+/* == Final da estilização da tela de comentários == */
+/* ================================================= */
+
+/* =================================== */
+/* == Estilização da tela de perfil == */
+/* =================================== */
+
+/* Página principal */
+.pagina-perfil {
+    /* Cor de fundo suave da página */
+    background: #eef3f1;
+    /* Remove margens padrão */
+    margin: 0;
+    /* Fonte principal */
+    font-family: 'Poppins', sans-serif;
+    /* Cor padrão dos textos */
+    color: #587a69;
+}
+
+/* Fundo abaixo da navegação */
+.pagina-perfil .topo-perfil {
+    /* Fundo em degradê verde */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Altura da faixa */
+    height: 180px;
+    /* Ocupa largura total */
+    width: 100%;
+    /* Mantém organização */
+    position: relative;
+    /* Camada inferior */
+    z-index: 1;
+}
+
+/* Área principal */
+.pagina-perfil .container {
+    /* Limite de largura */
+    max-width: 640px;
+    /* Centralização */
+    margin: -75px auto 35px;
+    /* Espaçamento lateral */
+    padding: 0 16px;
+    /* Mantém acima do topo */
+    position: relative;
+    /* Camada */
+    z-index: 2;
+}
+
+/* == Estilização do topo perfil == */
+
+/* Área avatar e textos */
+.pagina-perfil .perfil-topo {
+    /* Ativa flexbox */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 18px;
+    /* Espaço inferior */
+    margin-bottom: 18px;
+}
+
+/* Área textual */
+.pagina-perfil .perfil-titulo {
+    /* Organização vertical */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Centralização */
+    justify-content: center;
+}
+
+/* Título principal */
+.pagina-perfil .titulo-perfil {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 900;
+    /* Tamanho */
+    font-size: 34px;
+    /* Cor */
+    color: #2e744d;
+    /* Ajustes */
+    margin: 0;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+    /* Espaçamento inferior */
+    padding-bottom: 22px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Subtítulo */
+.pagina-perfil .sub-perfil {
+    /* Aproxima do título */
+    margin-top: -16px;
+}
+
+/* Descrição perfil */
+.pagina-perfil .descricao-perfil {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 400;
+    /* Tamanho */
+    font-size: 15px;
+    /* Cor */
+    color: #587a69;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Ajustes */
+    margin-top: -10px;
+    /* Espaço inferior */
+    margin-bottom: 23px;
+    /* Remove limite */
+    max-width: 100%;
+}
+
+/* == Avatar do perfil == */
+
+/* Fundo circular avatar */
+.pagina-perfil .avatar {
+    /* Dimensões */
+    width: 98px;
+    height: 98px;
+    /* Fundo branco */
+    background: #ffffff;
+    /* Formato circular */
+    border-radius: 50%;
+    /* Centralização */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Oculta excessos */
+    overflow: hidden;
+    /* Remove padding */
+    padding: 0;
+    /* Sombra */
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover avatar */
+.pagina-perfil .avatar:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Imagem avatar */
+.pagina-perfil .avatar img {
+    /* Dimensões */
+    width: 200px;
+    /* Altura */
+    height: 200px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Remove espaços */
+    display: block;
+    /* Remove margens */
+    margin: -4;
+    /* Remove padding */
+    padding: 0;
+    margin-top: 6px;
+    /* Move levemente para esquerda */
+    transform: translateX(-0.5px);
+}
+
+/* == Cards gerais == */
+
+/* Cards */
+.pagina-perfil .hero,
+.pagina-perfil .configuracoes-box {
+    /* Bordas */
+    border-radius: 20px;
+    /* Espaçamento interno */
+    padding: 18px 20px;
+    /* Espaço superior */
+    margin-top: 14px;
+    /* Sombra */
+    box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover cards */
+.pagina-perfil .hero:hover,
+.pagina-perfil .configuracoes-box:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Card verde */
+.pagina-perfil .hero {
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor padrão */
+    color: #ffffff;
+}
+
+/* Card branco */
+.pagina-perfil .configuracoes-box {
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* == Títulos dos cards == */
+
+/* Linha título */
+.pagina-perfil .titulo-card {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+    /* Espaço inferior */
+    margin-bottom: 16px;
+}
+
+/* Títulos */
+.pagina-perfil .hero h2,
+.pagina-perfil .configuracoes-box h2 {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 700;
+    /* Tamanho */
+    font-size: 23px;
+    /* Espaço inferior */
+    margin: 0 0 18px;
+}
+
+/* Título card verde */
+.pagina-perfil .hero h2 {
+    /* Cor branca */
+    color: #ffffff;
+}
+
+/* Título configurações */
+.pagina-perfil .configuracoes-box h2 {
+    /* Cor verde */
+    color: #2e744d;
+}
+
+/* Ícones títulos */
+.pagina-perfil .titulo-card img,
+.pagina-perfil .icone-titulo {
+    /* Tamanho */
+    width: 34px;
+    height: 34px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita distorção */
+    flex-shrink: 0;
+    /* Alinhamento fino */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Centralização */
+    justify-content: center;
+    /* Ajuste vertical */
+    margin-top: -2px;
+}
+
+/* == Informações pessoais == */
+
+/* Área informações */
+.pagina-perfil .perfil-info {
+    /* Organização vertical */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Espaçamento */
+    gap: 14px;
+}
+
+/* Linha individual */
+.pagina-perfil .perfil-info .linha-info {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 4px;
+    /* Largura */
+    width: 100%;
+}
+
+/* Área esquerda */
+.pagina-perfil .perfil-info .conteudo-info {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Ícones */
+.pagina-perfil .linha-info img {
+    /* Tamanho */
+    width: 22px;
+    height: 22px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita compressão */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-perfil .linha-info p {
+    /* Remove margens */
+    margin: 0;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 14px;
+    /* Peso */
+    font-weight: 300;
+    /* Cor */
+    color: #ffffff;
+    /* Altura linha */
+    line-height: 1.4;
+}
+
+/* Ícone editar */
+.pagina-perfil .editar-info {
+    /* Tamanho */
+    width: 38px !important;
+    height: 38px !important;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita compressão */
+    flex-shrink: 0;
+    /* Opacidade */
+    opacity: 1;
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover editar */
+.pagina-perfil .editar-info:hover {
+    /* Pequeno zoom */
+    transform: scale(1.08);
+}
+
+/* == Configurações == */
+
+/* Área configurações */
+.pagina-perfil .configuracoes-box {
+    /* Organização */
+    display: flex;
+    /* Direção */
+    flex-direction: column;
+    /* Espaçamento */
+    gap: 14px;
+}
+
+/* Linha configuração */
+.pagina-perfil .config-item {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 18px;
+    /* Mantém alinhado */
+    justify-content: flex-start;
+}
+
+/* Área esquerda */
+.pagina-perfil .config-info {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Ícones */
+.pagina-perfil .config-info img {
+    /* Tamanho */
+    width: 22px;
+    height: 22px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Evita distorção */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-perfil .config-info p {
+    /* Remove margens */
+    margin: 0;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 14px;
+    /* Peso */
+    font-weight: 300;
+    /* Cor */
+    color: #587a69;
+    /* Altura linha */
+    line-height: 1.4;
+}
+
+/* == Campo select == */
+
+/* Select */
+.pagina-perfil select {
+    /* Fundo */
+    background: #f1f5f3;
+    /* Borda */
+    border: 1px solid #e4eee9;
+    /* Bordas arredondadas */
+    border-radius: 12px;
+    /* Espaçamento */
+    padding: 10px 14px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Cor */
+    color: #587a69;
+    /* Remove padrão */
+    appearance: none;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover select */
+.pagina-perfil select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* Focus select */
+.pagina-perfil select:focus {
+    /* Remove outline */
+    outline: none;
+    /* Fundo */
+    background: #ffffff;
+    /* Borda destaque */
+    border: 1px solid #bfe4cf;
+}
+
+/* == Checkbox custom == */
+
+/* Remove padrão */
+.pagina-perfil input[type="checkbox"] {
+    /* Remove aparência */
+    appearance: none;
+    /* Dimensões */
+    width: 48px;
+    height: 26px;
+    /* Fundo */
+    background: #f1f5f3;
+    /* Borda */
+    border: 1px solid #dfe9e4;
+    /* Formato */
+    border-radius: 30px;
+    /* Cursor */
+    cursor: pointer;
+    /* Posição */
+    position: relative;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Bolinha interna */
+.pagina-perfil input[type="checkbox"]::before {
+    /* Conteúdo obrigatório */
+    content: "";
+    /* Posição */
+    position: absolute;
+    /* Distância esquerda */
+    left: 4px;
+    /* Distância topo */
+    top: 3px;
+    /* Dimensões */
+    width: 18px;
+    height: 18px;
+    /* Fundo */
+    background: #587a69;
+    /* Formato */
+    border-radius: 50%;
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover checkbox */
+.pagina-perfil input[type="checkbox"]:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Fundo */
+    background: #ffffff;
+}
+
+/* Checkbox ativa */
+.pagina-perfil input[type="checkbox"]:checked {
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove borda */
+    border: 1px solid transparent;
+}
+
+/* Move bolinha */
+.pagina-perfil input[type="checkbox"]:checked::before {
+    /* Nova posição */
+    left: 24px;
+    /* Cor */
+    background: #ffffff;
+}
+
+/* == Links da conta == */
+
+/* Área links */
+.pagina-perfil .acesso-conta {
+    /* Centraliza */
+    text-align: center;
+    /* Espaço superior */
+    margin-top: 20px;
+}
+
+/* Container links */
+.pagina-perfil .links {
+    /* Organização */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaço */
+    gap: 10px;
+}
+
+/* Botões links */
+.pagina-perfil .links a {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Fundo gradiente */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Cor */
+    color: #ffffff;
+    /* Espaçamento */
+    padding: 11px 20px;
+    /* Bordas */
+    border-radius: 12px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 14px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação */
+    transition: 0.25s ease;
+}
+
+/* Hover links */
+.pagina-perfil .links a:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+}
+
+/* ============================================== */
+/* == Final da estilização da página de perfil == */
+/* ============================================== */
+
+/* ================================== */
+/* == Estilização da tela de login == */
+/* ================================== */
+
+/* Fundo geral */
+body.pagina-login {
+    /* Cor de fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Área principal */
+.pagina-login main {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaçamento interno */
+    padding: 45px 16px 65px;
+}
+
+/* Wrapper */
+.pagina-login .login-wrapper {
+    /* Largura */
+    width: 100%;
+    /* ,Largura */
+    max-width: 720px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Topo */
+.pagina-login .login-topo {
+    /* Espaçamento interno */
+    padding: 0 4px;
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Título principal */
+.pagina-login .login-topo h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 42px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Espaçamento externo */
+    margin: 0 0 16px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Descrição */
+.pagina-login .login-topo p {
+    /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Card */
+.pagina-login .card {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 24px;
+    /* Espaçamento interno */
+    padding: 36px;
+    /* Sombra leve */
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+    /* Largura */
+    width: 100%;
+    /* Tamanho da caixa */
+    box-sizing: border-box;
+}
+
+/* Hover card */
+.pagina-login .card:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Título interno */
+.pagina-login .card h2 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 800;
+    /* Tamanho da fonte */
+    font-size: 29px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Espaçamento externo */
+    margin: 0 0 28px;
+}
+
+/* Formulário */
+.pagina-login form {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+    /* Espaçamento entre elementos */
+    gap: 14px;
+}
+
+/* Labels */
+.pagina-login label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #3f976e;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+}
+
+/* Inputs */
+.pagina-login input {
+    /* Hover card */
+    width: 100%;
+    /* Hover card */
+    padding: 15px 16px;
+    /* Hover card */
+    border-radius: 15px;
+    /* Hover card */
+    border: 1px solid #e4eee9;
+    /* Hover card */
+    background: #f1f5f3;
+    /* Hover card */
+    font-family: 'Poppins', sans-serif;
+    /* Hover card */
+    font-size: 14px;
+    /* Hover card */
+    font-weight: 300;
+    /* Hover card */
+    color: #587a69;
+    /* Hover card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Hover card */
+    box-sizing: border-box;
+    /* Hover card */
+    transition: none;
+}
+
+/* Placeholder */
+.pagina-login input::placeholder {
+    /* Hover card */
+    color: #587a69;
+    /* Hover card */
+    font-weight: 300;
+}
+
+/* Hover input */
+.pagina-login input:hover {
+    /* Hover card */
+    transform: none;
+    /* Hover card */
+    background: #ffffff;
+}
+
+/* Focus input */
+.pagina-login input:focus {
+    /* Remove sublinhado */
+    outline: none;
+    /* Remove */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Botão */
+.pagina-login button {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-top: 14px;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove as bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #ffffff;
+    /* Cursor */
+    cursor: pointer;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Hover botão */
+.pagina-login button:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra mais presente */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Caixa informativa */
+.pagina-login .info {
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 13px 15px;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaço entre elementos */
+    gap: 10px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Altura da linha */
+    line-height: 1.4;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Ícone */
+.pagina-login .info img {
+    /* Largura */
+    width: 34px;
+    /* Altura */
+    height: 34px;
+    /* Containers */
+    object-fit: contain;
+    /* Diminui o elemento para caber no container */
+    flex-shrink: 0;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Texto */
+.pagina-login .info p {
+    /* Remove a margem */
+    margin: 0;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Destaque */
+.pagina-login .info strong {
+    /* Cor do texto */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Margem à esquerda */
+    margin-left: -6px;
+    /* Margem à direita */
+    margin-right: 6px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de login == */
+/* ============================================= */
+
+/* ===================================== */
+/* == Estilização da tela de cadastro == */
+/* ===================================== */
+
+/* Fundo geral */
+body.pagina-cadastro {
+    /* Fundo */
+    background: #eef3f1;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* Área principal */
+.pagina-cadastro main {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    justify-content: center;
+    /* Espaçamento interno */
+    padding: 45px 16px 65px;
+}
+
+/* Wrapper */
+.pagina-cadastro .cadastro-wrapper {
+    /* Largura */
+    width: 100%;
+    /* Largura */
+    max-width: 720px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+}
+
+/* Topo */
+.pagina-cadastro .cadastro-topo {
+    /* Espaçamento interno */
+    padding: 0 4px;
+    /* Margem abaixo */
+    margin-bottom: 22px;
+}
+
+/* Título */
+.pagina-cadastro .cadastro-topo h1 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 900;
+    /* Tamanho da fonte */
+    font-size: 42px;
+    /* Cor do texto */
+    color: #2e744d;
+    /* Margem */
+    margin: 0 0 14px;
+    /* Altura da linha */
+    line-height: 1.05;
+}
+
+/* Descrição */
+.pagina-cadastro .cadastro-topo p {
+    /* Tamanho da fonte */
+    font-size: 15px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #6c7f75;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Espaçamento externo */
+    margin: 0;
+}
+
+/* Card */
+.pagina-cadastro .card {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Bordas arredondadas */
+    border-radius: 24px;
+    /* Espaçamento interno */
+    padding: 40px 36px;
+    /* Sombra leve */
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    /* Animação suave */
+    transition: 0.25s ease;
+    /* Largura */
+    width: 100%;
+    /* Caixa */
+    box-sizing: border-box;
+}
+
+/* Hover card */
+.pagina-cadastro .card:hover {
+    /* Elevação */
+    transform: translateY(-3px);
+}
+
+/* Formulário */
+.pagina-cadastro form {
+    /* Ativa a flexbox */
+    display: flex;
+    /* Direciona os itens em colunas */
+    flex-direction: column;
+    /* Espaçamento entre elementos */
+    gap: 14px;
+}
+
+/* Labels */
+.pagina-cadastro label {
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Cor do texto */
+    color: #3f976e;
+    /* Margem abaixo */
+    margin-bottom: 2px;
+}
+
+/* Inputs e selects */
+.pagina-cadastro input,
+.pagina-cadastro select {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px 16px;
+    /* Bordas arredondadas */
+    border-radius: 15px;
+    /* Bordas */
+    border: 1px solid #e4eee9;
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #587a69;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Tamanho da caixa */
+    box-sizing: border-box;
+    /* Remove a estilização padrão */
+    appearance: none;
+}
+
+/* Inputs sem animação */
+.pagina-cadastro input {
+    /* ALtera regras anteriores */
+    transition: none;
+}
+
+/* Selects com animação */
+.pagina-cadastro select {
+    /* Animação suave */
+    transition: 0.25s ease;
+}
+
+/* Placeholder */
+.pagina-cadastro input::placeholder {
+    /* Cor do texto */
+    color: #587a69;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* Hover input */
+.pagina-cadastro input:hover {
+    /* Remove as transformações */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+}
+
+/* Focus input */
+.pagina-cadastro input:focus {
+    /* Remove o sublinhado */
+    outline: none;
+    /* Remove as transformações */
+    transform: none;
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Hover select */
+.pagina-cadastro select:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Focus select */
+.pagina-cadastro select:focus {
+    /* Remove o sublinhado */
+    outline: none;
+    /* EElevação */
+    transform: translateY(-2px);
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Estilo da moldura */
+    border: 1px solid #bfe4cf;
+    /* Sombra da caixa */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* Botão */
+.pagina-cadastro button {
+    /* Largura */
+    width: 100%;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Margem acima */
+    margin-top: 14px;
+    /* Cor de fundo */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Remove as bordas */
+    border: none;
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Cor do texto */
+    color: #ffffff;
+    /* Cursor */
+    cursor: pointer;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Animação leve */
+    transition: 0.25s ease;
+}
+
+/* Hover botão */
+.pagina-cadastro button:hover {
+    /* Elevação */
+    transform: translateY(-2px);
+    /* Filtro */
+    filter: brightness(0.95);
+    /* Sombra leve */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Caixa informativa */
+.pagina-cadastro .info {
+    /* Cor de fundo */
+    background: #f1f5f3;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 13px 15px;
+    /* Margem acima */
+    margin-top: 20px;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaçamento entre elementos */
+    gap: 10px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Tamanho da fonte */
+    font-weight: 300;
+    /* Altura da linha */
+    line-height: 1.4;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Ícone */
+.pagina-cadastro .info img {
+    /* Largura */
+    width: 34px;
+    /* Altura */
+    height: 34px;
+    /* Ajusta a imagem sem distorcer */
+    object-fit: contain;
+    /* Define a proporção de redução */
+    flex-shrink: 0;
+}
+
+/* Texto */
+.pagina-cadastro .info p {
+    /* Espaçamento externo */
+    margin: 0;
+    /* Ativa a flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+}
+
+/* Destaque */
+.pagina-cadastro .info strong {
+    /* Cor do texto */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-weight: 500;
+    /* Margem à esquerda */
+    margin-left: -6px;
+    /* Margem à direita */
+    margin-right: 6px;
+}
+
+/* ================================================ */
+/* == Final da estilização da página de cadastro == */
+/* ================================================ */
+
+/* =================================== */
+/* == Estilização do rodapé do site == */
+/* =================================== */
+
+/* Rodapé principal */
+.rodape {
+    /* Fundo em gradiente */
+    background: linear-gradient(155deg, #1fcf6b, #129c4e);
+    /* Cor padrão dos textos */
+    color: #cbd5df;
+    /* Espaçamento interno */
+    padding: 40px 20px 0;
+    /* Largura total */
+    width: 100%;
+    /* Centraliza textos */
+    text-align: center;
+    /* Espaço acima */
+    margin-top: 40px;
+    /* Sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* == Estilização do container das colunas == */
+
+/* Container principal */
+.rodape-container {
+    /* Flexbox */
+    display: flex;
+    /* Distribuição */
+    justify-content: space-between;
+    /* Permite quebra */
+    flex-wrap: wrap;
+    /* Espaçamento entre colunas */
+    gap: 30px;
+    /* Largura máxima */
+    max-width: 1000px;
+    /* Centralização */
+    margin: 0 auto;
+    /* Espaçamento inferior */
+    padding-bottom: 30px;
+}
+
+/* == Estilização das colunas == */
+
+/* Colunas individuais */
+.rodape-col {
+    /* Largura flexível */
+    flex: 1;
+    /* Largura mínima */
+    min-width: 180px;
+    /* Alinhamento */
+    text-align: left;
+}
+
+/* Primeira coluna */
+.rodape-col:first-child {
+    /* Organização vertical */
+    display: flex;
+    /* Direção e ordem dos elementos */
+    flex-direction: column;
+    /* Alinhamento */
+    align-items: flex-start;
+}
+
+/* == Logomarca e idêntidade visual == */
+
+/* Área do logo */
+.rodape-logo-area,
+.logo-area,
+.logo-linha {
+    /* Flexbox */
+    display: flex;
+    /* Centralização */
+    align-items: center;
+    /* Espaçamento */
+    gap: 0;
+}
+
+/* Remove sublinhado */
+.logo-area a {
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+/* Logo do topo */
+.logo-topo {
+    /* Largura */
+    width: 55px;
+    /* Mantém proporção */
+    height: auto;
+    /* Remove desalinhamento */
+    display: block;
+}
+
+/* Logo do rodapé */
+.logo-rodape {
+    /* Largura */
+    width: 40px;
+    /* Altura */
+    height: 35px;
+    /* Ajuste */
+    object-fit: contain;
+    /* Remove espaços */
+    display: block;
+}
+
+/* == Estilização da descrição do rodapé == */
+
+/* Área da descrição */
+.rodape-desc {
+    /* Espaço acima */
+    margin-top: 10px;
+    /* Remove deslocamento */
+    margin-left: 0;
+    /* Remove deslocamento */
+    padding-left: 0;
+    /* Alinhamento */
+    text-align: left;
+    /* Altura da linha */
+    line-height: 1.4;
+}
+
+/* Texto da descrição */
+.rodape-desc p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Largura da fonte */
+    font-weight: 300;
+    /* Tamanho */
+    font-size: 13px;
+    /* Cor */
+    color: #e3e6e4da;
+}
+
+/* == Estilização dos títulos das colunas == */
+
+/* Título principal */
+.rodape-col h3 {
+    /* Fonte */
+    font-family: 'Nunito', sans-serif;
+    /* Peso */
+    font-weight: 900;
+    /* Cor */
+    color: #ffffff;
+    /* Remove margens */
+    margin: 0;
+}
+
+/* Estilização dos subtítulos */
+.rodape-col h4 {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Peso */
+    font-weight: 500;
+    /* Tamanho */
+    font-size: 15px;
+    /* Cor */
+    color: #ffffff;
+    /* Espaçamento */
+    margin-bottom: 10px;
+}
+
+/* == Estilização dos links do rodapé == */
+
+/* Links */
+.rodape-col a,
+.rodape-links a {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor */
+    color: #e3e6e4da;
+    /* Exibição */
+    display: block;
+    /* Espaçamento */
+    margin-bottom: 6px;
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Transição */
+    transition: 0.2s;
+}
+
+/* Hover dos links */
+.rodape-col a:hover,
+.rodape-links a:hover {
+    /* Clareia */
+    color: #ffffff;
+}
+
+/* Links extras */
+.rodape-links a {
+    margin: 0 10px;
+}
+
+/* == Estilização dos textos simples == */
+
+/* Parágrafos */
+.rodape-col p,
+.rodape p {
+    /* Fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho */
+    font-size: 13px;
+    /* Cor */
+    color: #e3e6e4da;
+    /* Espaçamento abaixo */
+    margin-bottom: 6px;
+}
+
+/* == Estilização da área de contato == */
+
+/* Linha de contato */
+.contato-item {
+    /* Flexbox */
+    display: flex;
+    /* Alinhamento */
+    align-items: center;
+    /* Espaçamento */
+    gap: 8px;
+    /* Espaço inferior */
+    margin-bottom: 6px;
+}
+
+/* Ícones de contato */
+.icone-contato {
+    /* Largura */
+    width: 20px;
+    /* Altura */
+    height: 25px;
+    /* Ajuste */
+    object-fit: contain;
+}
+
+/* Texto do contato */
+.contato-item p {
+    /* Remove a margem */
+    margin: 0;
+}
+
+/* == Estilização das redes sociais == */
+
+/* Área das redes */
+.contato-redes {
+    /* Flexbox */
+    display: flex;
+    /* Espaçamento */
+    gap: 10px;
+    /* Espaço acima */
+    margin-top: 10px;
+}
+
+/* Ícones das redes */
+.icone-rede {
+    /* Largura */
+    width: 22px;
+    /* Altura */
+    height: 22px;
+    /* Cursor */
+    cursor: pointer;
+    /* Transição */
+    transition: 0.2s;
+}
+
+/* Hover dos ícones */
+.icone-rede:hover {
+    /* Elevação suave */
+    transform: scale(1.1);
+}
+
+/* == Estilização da parte inferior == */
+
+/* Linha inferior */
+.rodape-bottom {
+    /* Linha separadora */
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Espaço acima */
+    margin-top: 10px;
+    /* Espaçamento interno acima */
+    padding-top: 25px;
+    /* Espaçamento interno abaixo */
+    padding-bottom: 85px;
+    /* Centralização */
+    text-align: center;
+    /* Largura total */
+    width: 100%;
+}
+
+/* Texto final */
+.rodape-bottom p {
+    /* Margem à esquerda */   
+    margin-left: 0;
+    /* Margem à direita */
+    margin-right: 0;
+}
+
+/* Padronização da fonte do rodapé */
+footer,
+footer p,
+footer a,
+footer span,
+footer li {
+    /* Fonte do rodapé */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte */
+    font-weight: 300;
+}
+
+/* ============================================ */
+/* == Final da estilização do rodapé do site == */
+/* ============================================ */

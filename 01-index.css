@@ -1,0 +1,607 @@
+/* ================================== */
+/* == Estilização da tela de index == */
+/* ================================== */
+
+/* Aplica o fundo na raiz visível */
+body.pagina-index {
+    /* Altura miníma da página */
+    min-height: 100vh;
+    /* Cor de fundo */
+    background-color: #eef3f1;
+}
+
+/* Estiliza todos os elementos da página */
+* {
+    /* Remove a margem */
+    margin: 0;
+    /* Remove o espaçamento interno */
+    padding: 0;
+    /* Tamanho das caixas */
+    box-sizing: border-box;
+}
+
+/* Estilização principal da tela */
+.pagina-index {
+    /* Remove o flex da tela de splash */
+    display: block;
+    /* Altura automática */
+    height: auto;
+    /* Garante fundo na tela toda */
+    min-height: 100vh;
+    /* Cor de fundo */
+    background-color: #cfdad3;
+    /* Fonte padrão do sistema */
+    font-family: 'Poppins', sans-serif;
+    /* Ocupação da coluna */
+    flex-direction: column;
+}
+
+/* Barra superior */
+.topo {
+    /* Ativa flex */
+    display: flex;
+    /* Mantém em linha (lado a lado) */
+    flex-direction: row;
+    /* Joga esquerda e direita para extremos */
+    justify-content: space-between;
+    /* Alinha verticalmente */
+    align-items: center;
+    /* Fundo */
+    background: linear-gradient(135deg, #1fcf6b, #129c4e);
+    /* Espaçamento interno */
+    padding: 15px 25px;
+}
+
+/* Estilização da logomarca na barra */
+.logo-area {
+    /* Alinha os itens em linha */
+    display: flex;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Espaço entre logo e texto */
+    gap: -0.2px;
+}
+
+/* Logo do topo */
+.logo-topo {
+    /* Define o tamanho da imagem */
+    width: 50px;
+    /* Transição suave */
+    transition: 0.3s;
+    /* Cursor indica interação */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse na logo */
+.logo-topo:hover {
+    /* Aumenta levemente */
+    transform: scale(1.08);
+    /* Ilumina um pouco */
+    filter: brightness(1.1);
+}
+
+/* Nome do sistema */
+.nome-site {
+    /* Fonte padrão da splash */
+    font-family: 'Nunito', sans-serif;
+    /* Tamanho da fonte */
+    font-size: 20px;
+    /* Deixa o texto mais forte */
+    font-weight: 900;
+    /* Cor branca */
+    color: white;
+    /* Transição suave */
+    transition: 0.3s;
+    /* Cursor */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse no nome */
+.nome-site:hover {
+    /* Leve aumento */
+    transform: scale(1.05);
+    /* Pequena subida */
+    transform: translateY(-1px);
+    /* Ilumina */
+    filter: brightness(1.1);
+}
+
+/* Container da direita do topo */
+.topo-direita {
+    /* Ativa flexbox */
+    display: flex;
+    /* Alinha todos os itens na mesma linha vertical */
+    align-items: center;
+    /* Espaçamento entre os elementos */
+    gap: 10px;
+}
+
+/* Botões do topo */
+.btn-topo {
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor do texto */
+    color: white;
+    /* Fundo transparente claro */
+    background: rgba(255, 255, 255, 0.2);
+    /* Espaçamento interno */
+    padding: 6px 12px;
+    /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Tamanho da fonte */
+    font-size: 13px;
+    /* Transição suave */
+    transition: 0.3s;
+}
+
+/* Hover dos botões */
+.btn-topo:hover {
+    /* Fundo mais claro */
+    background: rgba(255, 255, 255, 0.35);
+    /* Leve movimento */
+    transform: translateY(-2px);
+}
+
+/* Ícone de perfil */
+.icone-perfil {
+    /* Tamanho da imagem */
+    width: 30px;
+    /* Mantém proporção */
+    height: auto;
+    /* Deixa redondo */
+    border-radius: 50%;
+    /* Remove desalinhamento padrão de imagem */
+    display: block;
+}
+
+/* Hover do perfil */
+.icone-perfil:hover {
+    /* Leve aumento */
+    transform: scale(1.05);
+}
+
+/* Estilização da barra de navegação */
+.barra-nav {
+    /* Cor de fundo */
+    background: #ffffff;
+    /* Alinhamento */
+    display: flex;
+    /* Centralização dos elementos */
+    align-items: center;
+    /* Espaçamento interno */
+    padding: 20px 40px;
+    /* Ocupa toda a tela */
+    width: 100vw;
+    /* Centraliza fora do container */
+    margin-left: calc(-50vw + 50%);
+    /* Centralização */
+    justify-content: center;
+    /* Espaço entre elementos */
+    gap: 20px;
+    /* Bordas arredondadas */
+    border-radius: 0px;
+    /* Sombras */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem de cima */
+    margin-top: -2px;
+}
+
+/* Estilização do rodapé */
+.rodape-container {
+    /* largura máxima */
+    max-width: 1000px;
+    /* Margem automática */
+    margin: 0 auto;
+}
+
+/* Estilização dos links da barra */
+.barra-nav a {
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+    /* Cor dos links */
+    color: #3b5f4d;
+    /* Tamanho */
+    font-weight: 500;
+    /* Animação suave */
+    transition: 0.2s;
+}
+
+/* Animação suave */
+.barra-nav a:hover {
+    /* Cor */
+    color: #1f7a45;
+}
+
+/* Estilização do menu central de navegação */
+.menu-central a {
+    /* Espaçamento entre links */
+    margin: 0 10px;
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Cor branca */
+    color: white;
+    /* Peso médio */
+    font-weight: 500;
+}
+
+/* Perfil de usuário */
+.perfil-topo {
+    /* Margem da esquerda */
+    margin-left: auto;
+}
+
+/* Estilização do ícone de perfil */
+.icone-perfil {
+    /* Tamanho da imagem */
+    width: 30px;
+    /* Deixa redondo */
+    border-radius: 50%;
+}
+
+/* Estilização do conteúdo principal da tela */
+.container {
+    /* Define largura máxima */
+    max-width: 750px;
+    /* Centraliza na tela */
+    margin: 25px auto;
+    /* Espaçamento interno */
+    padding: 0 15px;
+}
+
+/* Remove aparência de caixa dos cards gerais */
+.card {
+    /* Remove fundo */
+    background: transparent;
+    /* Remove sombra */
+    box-shadow: none;
+    /* Remove bordas arredondadas */
+    border-radius: 0;
+    /* Mantém espaçamento */
+    padding: 10px 0;
+    /* Espaço entre seções */
+    margin-bottom: 15px;
+}
+
+/* Títlo do card principal */
+.card h1 {
+    font-family: 'Nunito', sans-serif;
+    /* Cor do texto */
+    color: #1f5e3b;
+    /* Margem */
+    margin-bottom: 5px;
+}
+
+/* Texto do card principal */
+.card p {
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Estilização das estatísticas */
+.stats {
+    /* Define layout em linha */
+    display: flex;
+    /* Distribui os elementos com espaço entre eles */
+    justify-content: space-between;
+    /* Espaçamento entre as caixas */
+    gap: 15px;
+    /* Espaço acima da seção */
+    margin-top: 25px;
+}
+
+/* Caixas das estatísticas */
+.stat-box {
+    /* Faz todas as caixas terem o mesmo tamanho */
+    flex: 1;
+    /* Cor de fundo branca */
+    background: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Centraliza o conteúdo */
+    text-align: center;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Suaviza animações */
+    transition: 0.25s;
+}
+
+/* Efeito ao passar o mouse */
+.stat-box:hover {
+    /* Move levemente para cima */
+    transform: translateY(-5px);
+    /* Aumenta a sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Filtro */
+    filter: brightness(0.95);
+}
+
+/* Números das estatísticas */
+.stat-box h3 {
+    /* Cor verde */
+    color: #18a357;
+    /* Tamanho da fonte */
+    font-size: 22px;
+}
+
+/* Texto das estatísticas */
+.stat-box p {
+    /* Tamanho menor */
+    font-size: 13px;
+    /* Cor cinza esverdeado */
+    color: #6c7f75;
+}
+
+/* Títulos gerais */
+h2 {
+    /* Define fonte destacada */
+    font-family: 'Nunito', sans-serif;
+    /* Cor verde escuro */
+    color: #1f5e3b;
+    /* Espaçamento acima e abaixo */
+    margin: 15px 0 10px;
+}
+
+/* Espaçamento entre as seções principais */
+.container section {
+    /* Espaço abaixo de cada bloco */
+    margin-bottom: 25px;
+}
+
+/* Estilização da mensagem de boas-vindas */
+.welcome {
+    /* Fonte dos textos */
+    font-family: 'Poppins', sans-serif;
+    /* Tamanho da fonte de texto */
+    font-size: 14px;
+    /* Opacidade */
+    opacity: 0.9;
+    /* Cor do texto */
+    color: #587a69;
+}
+
+/* Estilização da fonte do texto descritivo */
+.welcome p {
+    /* Estilização do body */
+    font-weight: 400;
+}
+
+/* Estilização do título principal de boas-vindas */
+.welcome h1 {
+    color: #1f5e3b;
+}
+
+/* Estilização da caixa sobre o projeto */
+.sobre-box {
+    /* Suaviza a animação */
+    transition: 0.25s;
+}
+
+/* Layout do bloco sobre o projeto */
+.sobre-conteudo {
+    /* Ativa o flexbox */
+    display: flex;
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+    /* Espaço entre os elementos */
+    gap: 10px;
+    /* Alinha verticalmente imagem e título */
+    align-items: center;
+}
+
+/* Layout do bloco de objetivo */
+.objetivo-conteudo {
+    /* Ativa o flexbox */
+    display: flex;
+    /* Permite quebra de linha */
+    flex-wrap: wrap;
+    /* Espaçamento entre os elementos */
+    gap: 10px;
+    /* Alinha imagem e título */
+    align-items: center;
+}
+
+/* Imagem dos blocos */
+.sobre-conteudo img {
+    /* Define tamanho menor da imagem */
+    width: 32px;
+    /* Impede a imagem de esticar */
+    flex-shrink: 0;
+}
+
+/* Ajusta somente a imagem da seção "Nosso objetivo" */
+.objetivo-conteudo img {
+    /* Define um tamanho menor que o padrão */
+    width: 25px;
+    /* Mantém proporção da imagem */
+    height: auto;
+    /* Evita que a imagem distorça o layout */
+    flex-shrink: 0;
+}
+
+/* Títulos ao lado das imagens */
+.sobre-conteudo h2,
+.objetivo-conteudo h2 {
+    /* Remove margem padrão */
+    margin: 0;
+}
+
+/* Texto informativo da seção sobre o projeto */
+.sobre-conteudo p {
+    /* Define nova fonte */
+    font-family: 'Poppins', sans-serif;
+    /* Cor do texto */
+    color: #3f6f5a;
+    /* Tamanho do texto */
+    font-size: 14px;
+    /* Altura da linha */
+    line-height: 1.5;
+    /* Deixa mais leve */
+    font-weight: 300;
+}
+
+/* Texto fica abaixo */
+.objetivo-conteudo p {
+    /* Faz o texto quebrar para linha de baixo */
+    width: 100%;
+    /* Pequeno espaço acima */
+    margin-top: 5px;
+}
+
+/* Hover do sobre */
+.sobre-box:hover {
+    /* Sobe levemente */
+    transform: translateY(-3px);
+    /* Leve aumento da sombra */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Bloco de objetivos */
+.objetivo {
+    /* Fundo verde */
+    background: linear-gradient(135deg, #1f9452da, #43c47bef);
+    /* Texto branco */
+    color: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaço acima */
+    margin-top: 15px;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+    /* Suaviza a animação */
+    transition: 0.25s;
+}
+
+/* Hover do objetivo */
+.objetivo:hover {
+    /* Sobe levemente */
+    transform: translateY(-3px);
+    /* Leve aumento da sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.212);
+}
+
+/* Título dentro do objetivo */
+.objetivo h2 {
+    /* Mantém o texto branco */
+    color: white;
+}
+
+/* Estilização do texto da seção "Nosso objetivo" */
+.objetivo p {
+    /* Mantém o texto branco */
+    color: white;
+}
+
+/* Título da seção */
+.titulo-sec {
+    /* Espaçamento acima e abaixo */
+    margin: 28px 0 18px;
+}
+
+/* Grade de navegação */
+.grid {
+    /* Ativa layout em grade */
+    display: grid;
+    /* Define 2 colunas iguais */
+    grid-template-columns: repeat(2, 1fr);
+    /* Espaçamento mais proporcional */
+    gap: 18px;
+    /* Suaviza a animação */
+    transition: 0.25s;
+    /* Margem acima */
+    margin-top: 24px;
+}
+
+/* Remove sublinhado da navegação rápida */
+.grid-item,
+.grid-item * {
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+/* Container do card */
+.grid-item {
+    /* Define layout flexível */
+    display: flex;
+    /* Organiza os elementos em coluna */
+    flex-direction: column;
+    /* Alinha os itens à esquerda */
+    align-items: flex-start;
+    /* Cor de fundo branca (balão) */
+    background: white;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Espaçamento interno */
+    padding: 18px;
+    /* Sombra leve para efeito de cartão */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Transição SUAVE (mais lenta e natural) */
+    transition: transform 0.30s ease;
+}
+
+/* Efeito ao passar o mouse */
+.grid-item:hover {
+    /* Movimento mais leve */
+    transform: translateY(-4px);
+    /* Sombra um pouco mais suave */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Fundo levemente alterado */
+    background: #f2f7f4;
+}
+
+/* Estilização dos textos */
+.grid-item p {
+    /* Cor do texto */
+    color: #1f5e3b;
+    /* Tamanho da fonte do título */
+    font-size: 15px;
+    /* Peso da fonte */
+    font-weight: 400;
+}
+
+/* Estilização dos textos */
+.grid-item span {
+    /* Tamanho da fonte */
+    font-size: 12px;
+    /* Cor do texto */
+    color: #6c7f75;
+}
+
+/* Ícone */
+.grid-item img {
+    /* Define a largura do ícone */
+    width: 40px;
+    /* Espaço abaixo do ícone */
+    margin-bottom: 8px;
+}
+
+/* Descrição mais leve */
+.grid-item span {
+    /* Tamanho da fonte menor */
+    font-size: 12px;
+    /* Cor mais suave */
+    color: #6c7f75;
+    /* Espaço acima do texto */
+    margin-top: 2px;
+}
+
+/* Estilização da seção sobre o projeto */
+.sobre-box {
+    /* Cor de fundo */
+    background: white;
+    /* Espaçamento interno */
+    padding: 20px;
+    /* Bordas arredondadas */
+    border-radius: 14px;
+    /* Sombra leve */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    /* Margem acima */
+    margin-top: 15px;
+}
+
+/* ============================================= */
+/* == Final da estilização da página de index == */
+/* ============================================= */
