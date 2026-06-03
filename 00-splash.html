@@ -1,0 +1,75 @@
+<!-- Vai chamar o html5 (mais atualizado) -->
+<!DOCTYPE html>
+<!-- Define o idioma da página em português - Brasil -->
+<html lang="pt-BR">
+
+<!-- Início das configurações básicas da página -->
+<head>
+    <!-- Aceita caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- A página se adapta em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação das fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Título exibido na aba do navegador -->
+    <title>Coleta Fácil - Splash</title>
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<!-- Fecha as configurações básicas -->
+</head>
+
+<!-- Início da parte visível do código -->
+
+<!-- Cria uma classe única para esssa página -->
+<body class="splash">
+
+    <!-- Container principal da tela -->
+    <div class="splash-container">
+
+        <!-- Logomarca -->
+        <img src="imagens/logomarca-coleta.png" alt="Logomarca - Coleta Fácil" class="logo">
+
+        <!-- Título principal da página -->
+        <h1>Coleta Fácil</h1>
+
+        <!-- Cria uma classe para o texto descritivo -->
+        <p class="descricao">
+            <!-- Texto descritivo-->
+            Organizando a coleta de lixo da sua cidade
+        </p>
+
+        <!-- Botão de "começar" -->
+         <!-- O "onclick" cria um caminho para a tela de início -->
+        <button class="button-comecar" onclick="irparahome()">
+            <!-- Texto do botão -->
+            Começar ➜
+        <!-- Fecha a tag botão -->
+        </button>
+
+        <!-- Pontos de carregamento -->
+        <div class="pontos">
+            <!-- Cada tag "span" cria um ponto de carregamento -->
+            <span></span>
+            <span></span>
+            <span></span>
+        <!-- Fecha a div da classe "pontos" -->
+        </div>
+    <!-- Fecha a div da classe "splash-container" -->
+    </div>
+
+    <!-- Script de navegação -->
+    <!-- Direciona para a tela de "01-index" -->
+    <script>
+        // Cria uma função
+        function irparahome() {
+            // Direciona para a página de início
+            window.location.href = "01-index.html";
+        }
+    // Fecha o script
+    </script>
+
+<!-- Final da página de splash -->
+</body>
+</html>

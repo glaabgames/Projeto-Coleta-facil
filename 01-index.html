@@ -1,0 +1,307 @@
+<!-- Vai chamar o html5 (mais atualizado) -->
+<!DOCTYPE html>
+<!-- Define o idioma da página em português - Brasil -->
+<html lang="pt-BR">
+
+<!-- Início das configurações básicas da página -->
+<head>
+    <!-- Define padrão de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação das fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Título exibido na aba do navegador -->
+    <title>Coleta Fácil - Início</title>
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<!-- Fecha as configurações básicas -->
+</head>
+
+<!-- Início da parte visível do código -->
+ 
+<!-- Cria uma classe única para essa página -->
+<body class="pagina-index">
+
+    <!-- Barra superior do site -->
+    <header class="topo">
+        <!-- Área da logomarca e nome do sistema -->
+        <div class="logo-area">
+            <!-- Link para tela de splash -->
+            <a href="00-splash.html">
+                <!-- Imagem da logomarca no topo -->
+                <img src="imagens/logomarca-coleta.png" class="logo-topo">
+            <!-- Fecha o link -->
+            </a>
+            <!-- Nome do sistema -->
+            <span class="nome-site">Coleta Fácil</span>
+        <!-- Fecha a classe "logo-area" -->
+        </div>
+
+        <!-- Área da direita (login, cadastro e perfil) -->
+        <div class="topo-direita">
+            <!-- Botão para acessar a tela de login -->
+            <a href="06-login.html" class="btn-topo">Entrar</a>
+            <!-- Botão para acessar a tela de cadastro -->
+            <a href="07-cadastro.html" class="btn-topo">Cadastrar</a>
+            <!-- Link que envolve a imagem de perfil -->
+            <a href="05-perfil.html">
+                <!-- Imagem do perfil do usuário -->
+                <img src="imagens/perfil-coleta.png" class="icone-perfil">
+            <!-- Fecha o link do perfil de usuário -->
+            </a>
+        <!-- Fecha a classe "topo-direita" -->
+        </div>
+    <!-- Fecha a barra superior -->
+    </header>
+
+    <!-- Menu de navegação principal -->
+    <nav class="barra-nav">
+        <!-- Link para página inicial -->
+        <a href="01-index.html">Início</a>
+        <!-- Link para página de calendário -->
+        <a href="02-calendario.html">Calendário</a>
+        <!-- Link para página de dicas -->
+        <a href="03-dicas.html">Dicas</a>
+        <!-- Link para página de comentários -->
+        <a href="04-comentarios.html">Comentários</a>
+    <!-- Fecha o menu de navegação -->
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+    <!-- Container principal da página -->
+    <div class="container">
+
+        <!-- Card principal de boas-vindas -->
+        <section class="welcome">
+            <!-- Título de boas-vindas -->
+            <h1>Bem-vindo ao Coleta Fácil</h1>
+            <!-- Texto informativo -->
+            <p>Aplicativo para gestão de resíduos urbanos.</p>
+
+            <!-- Estatísticas do site -->
+            <div class="stats">
+
+                <!-- Estatísticas -->
+                <!-- Repito a classe para poder separar em três blocos -->
+                <div class="stat-box">
+                    <!-- Número de cidades atendidas pelo projeto -->
+                    <h3>2</h3>
+                    <p>Cidades atendidas</p>
+                <!-- Fecha a classe -->
+                </div>
+
+                <!-- Estatísticas -->
+                <div class="stat-box">
+                    <!-- Número de usuários ativos -->
+                    <h3>200</h3>
+                    <p>Usuários ativos</p>
+                <!-- Fecha a classe -->
+                </div>
+
+                <!-- Estatísticas -->
+                <div class="stat-box">
+                    <!-- Porcentagem de satisfação dos usuários -->
+                    <h3>100%</h3>
+                    <p>Satisfação</p>
+                <!-- Fecha a classe -->
+                </div>
+            <!-- Fecha a classe "stats" -->
+            </div>
+        <!-- Fecha a seção de boas-vindas -->
+        </section>
+
+        <!-- Card sobre o sistema -->
+        <section class="sobre-box">
+            <!-- Cria um container para a imagem e o texto -->
+            <div class="sobre-conteudo">
+                <!-- Imagem à esquerda do subtítulo -->
+                <img src="imagens/sobre-coleta.png" alt="Sobre o Coleta Fácil">
+                <!-- Subtítulo -->
+                <h2>Sobre o Coleta Fácil</h2>
+                <!-- Texto informativo -->
+                <p>
+                    O Coleta Fácil conecta cidadãos ao serviço de coleta de resíduos.
+                    Consulte o calendário, envie sugestões e contribua para uma cidade mais limpa.
+                </p>
+            <!-- Fecha a classe "sobre-conteudo" -->
+            </div>
+        <!-- Fecha a seção "sobre-box" -->
+        </section>
+
+        <!-- Objetivos -->
+        <section class="objetivo">
+            <!-- Cria um container para a imagem e o texto -->
+            <div class="objetivo-conteudo">
+                <!-- Imagem à esquerda do subtítulo -->
+                <img src="imagens/objetivo-coleta.png" alt="Nosso objetivo">
+                <!-- Subtítulo -->
+                <h2>Nosso Objetivo</h2>
+                <!-- Texto informativo -->
+                <p>
+                    Facilitar o acesso à informação sobre coleta de
+                    lixo, promover a conscientização ambiental e criar
+                    um canal direto entre cidadãos e prefeituras para melhorar
+                    a gestão de resíduos urbanos.
+                </p>
+            <!-- Fecha a classe "objetivo-conteudo" -->
+            </div>
+        <!-- Fecha a seção "objetivo" -->
+        </section>
+
+        <!-- Navegação rápida -->
+        <h2 class="titulo-sec">Navegação Rápida</h2>
+
+        <!-- Grid de atalhos -->
+        <div class="grid">
+            <!-- Link que direciona para a página de calendário -->
+            <a href="02-calendario.html" class="grid-item">
+                <!-- Imagem representando o calendário -->
+                <img src="imagens/calendario-coleta.png" alt="Tela de Calendário">
+                <!-- Texto principal do link -->
+                <p>Calendário</p>
+                <!-- Texto complementar explicando a função -->
+                <span>Dias de coleta</span>
+            </a>
+
+            <!-- Link que direciona para a página de dicas -->
+            <a href="03-dicas.html" class="grid-item">
+                <!-- Imagem representando dicas -->
+                <img src="imagens/dicas-coleta.png" alt="Tela de Conscientização">
+                <!-- Texto principal do link -->
+                <p>Dicas</p>
+                <!-- Texto complementar explicando a função -->
+                <span>Conscientização</span>
+            </a>
+
+            <!-- Link que direciona para a página de comentários -->
+            <a href="04-comentarios.html" class="grid-item">
+                <!-- Imagem representando comentários -->
+                <img src="imagens/comentarios-coleta.png" alt="Tela de Comentários">
+                <!-- Texto principal do link -->
+                <p>Comentários</p>
+                <!-- Texto complementar explicando a função -->
+                <span>Reclamações</span>
+            </a>
+
+            <!-- Link que direciona para a página de perfil -->
+            <a href="05-perfil.html" class="grid-item">
+                <!-- Imagem representando o perfil do usuário -->
+                <img src="imagens/usuario-coleta.png" alt="Tela de Perfil">
+                <!-- Texto principal do link -->
+                <p>Perfil</p>
+                <!-- Texto complementar explicando a função -->
+                <span>Perfil de usuário</span>
+            </a>
+        <!-- Fecha a classe "grid"-->
+        </div>
+        <!-- Fecha a classe "container"-->
+        </div>
+    <!-- Fecha o conteúdo principal -->
+    </main>
+
+    <!-- Rodapé principal do site -->
+    <footer class="rodape">
+
+        <!-- Container que organiza todas as colunas do rodapé -->
+        <div class="rodape-container">
+            <!-- Coluna do rodapé que contém a logo, nome e descrição -->
+            <div class="rodape-col">
+                <!-- Linha que agrupa a logomarca e o nome do site -->
+                <div class="logo-linha">
+                    <!-- Imagem da logomarca do sistema -->
+                    <img src="imagens/logo-rodape-coleta.png" class="logo-rodape">
+                    <!-- Nome do sistema exibido ao lado da logo -->
+                    <h3>Coleta Fácil</h3>
+                <!-- Fecha a classe -->
+                </div>
+
+                <!-- Texto descritivo do sistema -->
+                <p class="rodape-desc">
+                    <!-- Descrição resumida da proposta do sistema -->
+                    Conectando cidadãos à coleta de resíduos para cidades mais limpas e sustentáveis.
+                </p>
+            <!-- Fecha a classe -->
+            </div>
+
+            <!-- Links de navegação do site -->
+            <div class="rodape-col">
+
+                <!-- Título da seção -->
+                <h4>Páginas</h4>
+                <!-- Link para página inicial -->
+                <a href="01-index.html">Início</a>
+                <!-- Link para página de calendário -->
+                <a href="02-calendario.html">Calendário</a>
+                <!-- Link para página de dicas -->
+                <a href="03-dicas.html">Dicas</a>
+                <!-- Link para página de perfil -->
+                <a href="04-comentarios.html">Comentários</a>
+                <!-- Link para página de perfil -->
+                <a href="05-perfil.html">Perfil</a>
+            <!-- Fecha a classe "rodape-col" -->
+            </div>
+
+            <!-- Área de ajuda e suporte -->
+            <div class="rodape-col">
+                <!-- Título da seção -->
+                <h4>Ajuda</h4>
+                <!-- Link para página sobre -->
+                <a href="#">Sobre nós</a>
+                <!-- Link para contato -->
+                <a href="#">Contato</a>
+                <!-- Link para suporte -->
+                <a href="#">Suporte</a>
+            <!-- Fecha a classe "rodape-col" -->
+            </div>
+
+            <!-- Informações de contato -->
+            <div class="rodape-col contato-col">
+                <!-- Título da seção de contato -->
+                <h4>Contato</h4>
+                <!-- Linha do email -->
+                <div class="contato-item">
+                    <!-- Ícone representando email -->
+                    <img src="imagens/email-coleta.png" class="icone-contato">
+                    <!-- Texto do email de contato -->
+                    <p>contato@coletafacil.com</p>
+                <!-- Fecha a classe "contato-item" -->
+                </div>
+
+                <!-- Linha da localização -->
+                <div class="contato-item">
+                    <!-- Ícone representando localização -->
+                    <img src="imagens/localizacao-coleta.png" class="icone-contato">
+                    <!-- Texto com a cidade e estado cadastrados -->
+                    <p>Imbituva - PR</p>
+                <!-- Fecha a classe "contato-item" -->
+                </div>
+
+                <!-- Área das redes sociais -->
+                <div class="contato-redes">
+                    <!-- Ícone do WhatsApp -->
+                    <img src="imagens/whats-coleta.png" class="icone-rede">
+                    <!-- Ícone do Instagram -->
+                    <img src="imagens/instagram-coleta.png" class="icone-rede">
+                <!-- Fecha a classe "contato-redes" -->
+                </div>
+            <!-- Fecha a classe "rodape-col contato-col" -->
+            </div>
+
+            <!-- Linha inferior do rodapé -->
+            <div class="rodape-bottom">
+                <!-- Texto de copyright padrão de sites -->
+                <p>© 2026 Coleta Fácil - Todos os direitos reservados</p>
+            <!-- Fecha a classe "rodape-bottom" -->
+            </div>
+    <!-- Fecha o rodapé -->
+    </footer>
+
+<!-- Fecha o body -->
+</body>
+<!-- Final da página de início -->
+</html>

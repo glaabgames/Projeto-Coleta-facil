@@ -1,0 +1,342 @@
+<!-- Vai chamar o html5 (mais atualizado) -->
+<!DOCTYPE html>
+<!-- Define o idioma da página como português - Brasil -->
+<html lang="pt-BR">
+
+<!-- Início das configurações básicas da página -->
+<head>
+    <!-- Define o padrão de codificação de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuração para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título exibido na aba do navegador -->
+    <title>Coleta Fácil - Dicas</title>
+    <!-- Importação das fontes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<!-- Fecha as configurações básicas -->
+</head>
+
+<!-- Início da parte visível do código -->
+
+<!-- Cria uma classe única para essa página -->
+<body class="pagina-dicas">
+
+    <!-- Barra superior do site -->
+    <header class="topo">
+        <!-- Área da logomarca e nome do sistema -->
+        <div class="logo-area">
+            <!-- Link para tela de splash -->
+            <a href="00-splash.html">
+                <!-- Imagem da logomarca no topo -->
+                <img src="imagens/logomarca-coleta.png" class="logo-topo">
+            <!-- Fecha o link -->
+            </a>
+            <!-- Nome do sistema -->
+            <span class="nome-site">Coleta Fácil</span>
+        <!-- Fecha a classe "logo-area" -->
+        </div>
+
+        <!-- Área da direita (login, cadastro e perfil) -->
+        <div class="topo-direita">
+            <!-- Botão para acessar a tela de login -->
+            <a href="06-login.html" class="btn-topo">Entrar</a>
+            <!-- Botão para acessar a tela de cadastro -->
+            <a href="07-cadastro.html" class="btn-topo">Cadastrar</a>
+            <!-- Link que envolve a imagem de perfil -->
+            <a href="05-perfil.html">
+                <!-- Imagem do perfil do usuário -->
+                <img src="imagens/perfil-coleta.png" class="icone-perfil">
+            <!-- Fecha o link do perfil de usuário -->
+            </a>
+        <!-- Fecha a classe "topo-direita" -->
+        </div>
+    <!-- Fecha a barra superior -->
+    </header>
+
+    <!-- Menu de navegação principal -->
+    <nav class="barra-nav">
+        <!-- Link para página inicial -->
+        <a href="01-index.html">Início</a>
+        <!-- Link para página de calendário -->
+        <a href="02-calendario.html">Calendário</a>
+        <!-- Link para página de dicas -->
+        <a href="03-dicas.html">Dicas</a>
+        <!-- Link para página de comentários -->
+        <a href="04-comentarios.html">Comentários</a>
+    <!-- Fecha o menu de navegação -->
+    </nav>
+
+    <!-- Início do conteúdo principal da página-->
+    <main>
+
+    <!-- Container principal da página -->
+    <div class="container">
+
+        <!-- Seção introdutória com título e descrição -->
+        <section class="intro-dicas">
+            <!-- Linha que organiza o conteúdo -->
+            <div class="intro-linha">
+                <!-- Espaçamento entre título e texto descritivo -->
+                <div>
+                    <!-- Título principal -->
+                    <h1>Dicas sustentáveis</h1>
+                    <!-- Descrição da seção -->
+                    <p>Dicas para o descarte correto de materiais, contribuindo para cidades mais limpas.</p>
+                <!-- Fecha o espaçamento -->
+                </div>
+            <!-- Fecha a classe "intro-linha" -->
+            </div>
+        <!-- Fecha a seção "intro-dicas" -->
+        </section>
+
+        <!-- Grid que organiza os cards -->
+        <div class="grid-cards">
+            <!-- 1- Tipos de resíduos -->
+            <section class="card">
+                <!-- Linha do título com ícone -->
+                <div class="titulo-linha">
+                    <!-- Ícone do card -->
+                    <img src="imagens/tipos-coleta.png" class="icone-titulo">
+                    <!-- Título do card -->
+                    <h2>Tipos de resíduos</h2>
+                <!-- Fecha a classe "titulo-linha"-->
+                </div>
+
+                <!-- Item papel -->
+                <div class="item-residuo">
+                    <!-- Imagem -->
+                    <img src="imagens/item-coleta.png" class="icone-residuo">
+                    <!-- Texto descritivo -->
+                    <p>Papel: manter limpo e seco.</p>
+                <!-- Fecha a classe "item-residuo" -->
+                </div>
+
+                <!-- Item plástico -->
+                <div class="item-residuo">
+                    <!-- Imagem -->
+                    <img src="imagens/item-coleta.png" class="icone-residuo">
+                    <!-- Texto descritivo -->
+                    <p>Plástico: lavar antes do descarte.</p>
+                <!-- Fecha a classe "item-residuo" -->
+                </div>
+
+                <!-- Item vidro -->
+                <div class="item-residuo">
+                    <!-- Imagem -->
+                    <img src="imagens/item-coleta.png" class="icone-residuo">
+                    <!-- Texto descritivo -->
+                    <p>Vidro: embalar para evitar acidentes.</p>
+                <!-- Fecha a classe "item-residuo" -->
+                </div>
+
+                <!-- Item metal -->
+                <div class="item-residuo">
+                    <!-- Imagem -->
+                    <img src="imagens/item-coleta.png" class="icone-residuo">
+                    <!-- Texto descritivo -->
+                    <p>Metal: descartar sem resíduos internos.</p>
+                <!-- Fecha a classe "item-residuo" -->
+                </div>
+            <!-- Fecha a seção -->
+            </section>
+
+            <!-- Organização do lixo -->
+            <div class="card organizacao-lixo">
+                <!-- Linha do título -->
+                <div class="titulo-linha">
+                    <!-- Ícone do card -->
+                    <img src="imagens/organizacao-coleta.png" class="icone-titulo">
+                    <!-- Título -->
+                    <h2>Organização do lixo</h2>
+                <!-- Fecha a classe "titulo-linha" -->
+                </div>
+
+                <!-- Item de dica -->
+                <div class="item-lixo">
+                    <!-- Ícone -->
+                    <img src="imagens/correto-coleta.png" class="icone-item">
+                    <!-- Texto descritivo -->
+                    <p>Separe recicláveis e orgânicos.</p>
+                <!-- Fecha a classe "item-lixo" -->
+                </div>
+
+                <!-- Item de dica -->
+                <div class="item-lixo">
+                    <!-- ícone -->
+                    <img src="imagens/correto-coleta.png" class="icone-item">
+                    <!-- Texto descritivo -->
+                    <p>Use sacos diferentes.</p>
+                <!-- Fecha a classe "item-lixo" -->
+                </div>
+
+                <!-- Item de dica -->
+                <div class="item-lixo">
+                    <!-- Ícone -->
+                    <img src="imagens/correto-coleta.png" class="icone-item">
+                    <!-- Texto descritivo -->
+                    <p>Evite misturar resíduos.</p>
+                <!-- Fecha a classe "item-lixo" -->
+                </div>
+
+                <!-- Item de dica -->
+                <div class="item-lixo">
+                    <!-- Ícone -->
+                    <img src="imagens/correto-coleta.png" class="icone-item">
+                    <!-- Texto descritivo -->
+                    <p>Identifique materiais perigosos.</p>
+                <!-- Fecha a classe "item-lixo" -->
+                </div>
+            <!-- Fecha o card de organização do lixo -->
+            </div>
+
+            <!-- Dica rápida -->
+            <div class="card organizacao-lixo">
+                <!-- Linha do título -->
+                <div class="titulo-linha">
+                    <!-- Ícone do card -->
+                    <img src="imagens/dicas-coleta.png" class="icone-titulo">
+                    <!-- Título -->
+                    <h2>Dica rápida</h2>
+                <!-- Fecha a classe "titulo-linha" -->
+                </div>
+
+                <!-- Conteúdo da dica -->
+                <div class="item-lixo">
+                    <!-- Ícone -->
+                    <img src="imagens/correto-coleta.png" class="icone-item">
+                    <!-- Texto explicativo -->
+                    <p>
+                        Separar corretamente o lixo em casa reduz impactos ambientais,
+                        melhora a eficiência da coleta e contribui diretamente para a reciclagem.
+                    </p>
+                <!-- Fecha a classe "item-lixo" -->
+                </div>
+            <!-- Fecha a classe "card organizacao-lixo" -->
+            </div>
+
+            <!-- Resíduos especiais -->
+            <section class="card">
+                <!-- Linha do título -->
+                <div class="titulo-linha">
+                    <!-- Ícone -->
+                    <img src="imagens/residuos-coleta.png" class="icone-titulo">
+                    <!-- Título -->
+                    <h2>Resíduos especiais</h2>
+                <!-- Fecha a classe "titulo-linha" -->
+                </div>
+
+                <!-- Lista de resíduos especiais -->
+                <p>Eletrônicos ➜ pontos de coleta.</p>
+                <p>Medicamentos ➜ farmácias.</p>
+                <p>Lâmpadas ➜ descarte específico.</p>
+                <p>Óleo de cozinha ➜ armazenar e levar para coleta.</p>
+            <!-- Fecha a seção "card" -->
+            </section>
+        <!-- Fecha a classe "grid-cards" -->
+        </div>
+    <!-- Fecha o conteúdo principal da página -->
+    </main>
+
+    <!-- Rodapé principal do site -->
+    <footer class="rodape">
+
+        <!-- Container que organiza todas as colunas do rodapé -->
+        <div class="rodape-container">
+            <!-- Coluna do rodapé que contém a logo, nome e descrição -->
+            <div class="rodape-col">
+                <!-- Linha que agrupa a logomarca e o nome do site -->
+                <div class="logo-linha">
+                    <!-- Imagem da logomarca do sistema -->
+                    <img src="imagens/logo-rodape-coleta.png" class="logo-rodape">
+                    <!-- Nome do sistema exibido ao lado da logo -->
+                    <h3>Coleta Fácil</h3>
+                <!-- Fecha a classe -->
+                </div>
+
+                <!-- Texto descritivo do sistema -->
+                <p class="rodape-desc">
+                    <!-- Descrição resumida da proposta do sistema -->
+                    Conectando cidadãos à coleta de resíduos para cidades mais limpas e sustentáveis.
+                </p>
+            <!-- Fecha a classe -->
+            </div>
+
+            <!-- Links de navegação do site -->
+            <div class="rodape-col">
+
+                <!-- Título da seção -->
+                <h4>Páginas</h4>
+                <!-- Link para página inicial -->
+                <a href="01-index.html">Início</a>
+                <!-- Link para página de calendário -->
+                <a href="02-calendario.html">Calendário</a>
+                <!-- Link para página de dicas -->
+                <a href="03-dicas.html">Dicas</a>
+                <!-- Link para página de perfil -->
+                <a href="04-comentarios.html">Comentários</a>
+                <!-- Link para página de perfil -->
+                <a href="05-perfil.html">Perfil</a>
+            <!-- Fecha a classe "rodape-col" -->
+            </div>
+
+            <!-- Área de ajuda e suporte -->
+            <div class="rodape-col">
+                <!-- Título da seção -->
+                <h4>Ajuda</h4>
+                <!-- Link para página sobre -->
+                <a href="#">Sobre nós</a>
+                <!-- Link para contato -->
+                <a href="#">Contato</a>
+                <!-- Link para suporte -->
+                <a href="#">Suporte</a>
+            <!-- Fecha a classe "rodape-col" -->
+            </div>
+
+            <!-- Informações de contato -->
+            <div class="rodape-col contato-col">
+                <!-- Título da seção de contato -->
+                <h4>Contato</h4>
+                <!-- Linha do email -->
+                <div class="contato-item">
+                    <!-- Ícone representando email -->
+                    <img src="imagens/email-coleta.png" class="icone-contato">
+                    <!-- Texto do email de contato -->
+                    <p>contato@coletafacil.com</p>
+                <!-- Fecha a classe "contato-item" -->
+                </div>
+
+                <!-- Linha da localização -->
+                <div class="contato-item">
+                    <!-- Ícone representando localização -->
+                    <img src="imagens/localizacao-coleta.png" class="icone-contato">
+                    <!-- Texto com a cidade e estado cadastrados -->
+                    <p>Imbituva - PR</p>
+                <!-- Fecha a classe "contato-item" -->
+                </div>
+
+                <!-- Área das redes sociais -->
+                <div class="contato-redes">
+                    <!-- Ícone do WhatsApp -->
+                    <img src="imagens/whats-coleta.png" class="icone-rede">
+                    <!-- Ícone do Instagram -->
+                    <img src="imagens/instagram-coleta.png" class="icone-rede">
+                <!-- Fecha a classe "contato-redes" -->
+                </div>
+            <!-- Fecha a classe "rodape-col contato-col" -->
+            </div>
+
+            <!-- Linha inferior do rodapé -->
+            <div class="rodape-bottom">
+                <!-- Texto de copyright padrão de sites -->
+                <p>© 2026 Coleta Fácil - Todos os direitos reservados</p>
+            <!-- Fecha a classe "rodape-bottom" -->
+            </div>
+    <!-- Fecha o rodapé -->
+    </footer>
+<!-- Final da página de dicas -->
+</body>
+</html>
